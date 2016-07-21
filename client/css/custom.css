@@ -1,0 +1,166 @@
+
+/* Override Bootrap styling & global styling*/
+
+.container-fluid {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #02b3e4;
+}
+
+/* Header styling */
+
+header,
+footer {
+
+  /* Background-image is darken to help show text */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/pixmi/image/upload/v1469043307/m7qwul4goecfub6oytpg.jpg") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*
+   * Remove bottom margin from header
+   * Should not effect footer since default is already at 0
+  */
+
+  margin-bottom: 0;
+}
+
+header .title,
+header p, .jumbotron {
+  margin-bottom: 0;
+}
+
+#logo {
+  width: 140px;
+  height: 140px;
+}
+
+.jumbotron {
+  padding: 20px;
+  border-radius: 0;
+}
+
+header .title {
+  color: #02b3e4;
+}
+
+header .subtitle {
+  color: #7d97ad;
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px #fff solid;
+}
+
+header a, header a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+header p {
+  color: #fff;
+}
+
+/* Main styling */
+
+main .page-header {
+  margin: 40px auto 40px auto;
+  padding-bottom: 0;
+  border-bottom: solid #2d3c49 1px;
+}
+
+/* Brightness for 'Featured Work' img */
+
+main img {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+  cursor: pointer;
+  -moz-transition: all ease-in .3s;
+  -webkit-transition: all ease-in .3s;
+  -o-transition: all ease-in .3s;
+  -ms-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+main img:hover {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+/* 'Featured Work' .img-title and .description */
+
+.img-title, .description {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.img-title {
+  top: 40%;
+}
+
+.description {
+  top: 60%;
+}
+
+/* Footer styling */
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+
+  /* Remove rounded for screen width of iPad and below */
+
+  main .img-rounded {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Header styling */
+
+  header .col-sm-6,
+  header .subtitle,
+  main .page-header {
+    text-align: center;
+  }
+
+  header .subtitle {
+    margin-top: 15px;
+  }
+
+  header p {
+    text-align: left;
+  }
+
+  /* Main styling */
+
+  main .container, main .col-md-4 {
+    padding: 0;
+  }
+
+  /* Footer styling */
+
+  footer {
+    margin-top: 0;
+  }
+}
