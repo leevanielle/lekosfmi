@@ -1,0 +1,33 @@
+/* Override Bootrap styling & global styling*/
+
+.container-fluid {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #02b3e4;
+}
+
+header .jumbotron,
+footer {
+
+  /* Background-image is darken to help show text */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/pixmi/image/upload/v1469043307/m7qwul4goecfub6oytpg.jpg") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*
+   * Remove bottom margin from header
+   * Should not effect footer since default is already at 0
+  */
+
+  margin-bottom: 0;
+}

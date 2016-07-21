@@ -1,0 +1,65 @@
+/* Header styling */
+
+header {
+  .title, .jumbotron {
+    margin-bottom: 0;
+  }
+
+  a, p {
+    color: #fff
+  }
+
+  #logo {
+    width: 140px;
+    height: 140px;
+    margin-right: 100%;
+  }
+
+  .jumbotron {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .title {
+    color: #02b3e4;
+    text-align: right;
+  }
+
+  .subtitle {
+   color: #7d97ad;
+   font-size: 25px;
+   margin-bottom: 15px;
+   padding-bottom: 5px;
+   border-bottom: 1px #fff solid;
+   text-align: right;
+ }
+
+a {
+   text-decoration: underline;
+   &:hover {
+     color: #fff;
+     text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Header styling */
+
+  header {
+    #logo {
+      margin-right: 0;
+      //text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
