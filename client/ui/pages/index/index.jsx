@@ -23,9 +23,9 @@ let projects = [
   {
     _id: 1,
     link: 'http://prime-calculate.lekosfmi.com/',
-    src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298411/ney7y9aubqo3fs1jltk1.jpg',
-    title: 'Pixmi',
-    description: 'Photo sharing app'
+    src: 'https://res.cloudinary.com/pixmi/image/upload/v1470099759/bbvkpew6dgdeop8rhzbf.png',
+    title: 'Prime Calculate',
+    description: 'Determine whether a number is prime or composite'
   },
   {
     _id: 2,
