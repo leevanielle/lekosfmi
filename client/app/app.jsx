@@ -10,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {this.props.content} // render w/ routes.jsx
+        {this.props.content}
         <Footer />
       </div>
     )
