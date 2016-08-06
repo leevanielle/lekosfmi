@@ -1,7 +1,10 @@
+// import main components
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
+// import custom components
 import PageHeader from '../page-header/page-header.jsx'
+
 
 export default class FeaturedWork extends Component {
   render() {
@@ -16,6 +19,7 @@ export default class FeaturedWork extends Component {
   }
 }
 
+// declaring propTypes
 React.propTypes = {
   title: PropTypes.string.isRequired,
   renderPictureBlock: React.PropTypes.func

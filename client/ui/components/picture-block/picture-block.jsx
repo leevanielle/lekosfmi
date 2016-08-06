@@ -1,5 +1,7 @@
+// import main components
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
+
 
 export default class PictureBlock extends Component {
   render() {
@@ -15,6 +17,7 @@ export default class PictureBlock extends Component {
   }
 }
 
+// declaring propTypes
 React.propTypes = {
   link: React.PropTypes.string.isRequired,
   src: React.PropTypes.string.isRequired,

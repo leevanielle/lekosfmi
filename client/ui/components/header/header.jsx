@@ -1,5 +1,7 @@
+// import main components
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
+
 
 export default class Header extends Component {
   render() {
@@ -22,6 +24,7 @@ export default class Header extends Component {
   }
 }
 
+// declaring propTypes
 React.propTypes = {
   link: React.PropTypes.string.isRequired,
   logoImg: PropTypes.string.isRequired,

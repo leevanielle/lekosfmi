@@ -1,10 +1,11 @@
+// import main components
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
+// import custom components
 export default class PageHeader extends Component {
   pageHeader() {
-    // for id and className
-    return "page-header"
+    return "page-header" // for id and className
   }
 
   render() {
@@ -16,6 +17,7 @@ export default class PageHeader extends Component {
   }
 }
 
+// declaring propTypes
 React.propTypes = {
   title: PropTypes.string
 }

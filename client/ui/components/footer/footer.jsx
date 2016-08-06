@@ -1,9 +1,10 @@
+// import main components
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
+
 export default class Footer extends Component {
   copyright() {
-
     let date = new Date()
     let year = date.getFullYear()
 
