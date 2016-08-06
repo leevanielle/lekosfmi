@@ -6,7 +6,7 @@ import { render } from 'react-dom'
 export default class PictureBlock extends Component {
   render() {
     return (
-      <div className="col-md-4">
+      <div className={this.props.size}>
         <a className="text-center" href={this.props.link} target="_blank">
           <img src={this.props.src} className="img-responsive img-rounded" />
           <h2 className="img-title">{this.props.title}</h2>
@@ -19,6 +19,7 @@ export default class PictureBlock extends Component {
 
 // declaring propTypes
 React.propTypes = {
+  size: React.PropTypes.string.isRequired,
   link: React.PropTypes.string.isRequired,
   src: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,

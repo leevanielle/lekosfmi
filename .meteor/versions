@@ -31,21 +31,13 @@ htmljs@1.0.10
 http@1.2.8
 id-map@1.0.8
 jquery@1.11.9
-kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
 launch-screen@1.0.12
 livedata@1.0.18
 logging@1.1.14
 meteor@1.2.16
 meteor-base@1.0.4
-<<<<<<< HEAD
-meteorhacks:fast-render@2.14.0
-meteorhacks:inject-data@2.0.0
-meteorhacks:meteorx@1.4.1
-meteorhacks:picker@1.0.3
 meteortoys:toykit@3.0.4
-=======
->>>>>>> 756de63345c6d159ae69d94cff9ab7feb90edf76
 minifier-css@1.2.13
 minifier-js@1.2.13
 minimongo@1.0.17

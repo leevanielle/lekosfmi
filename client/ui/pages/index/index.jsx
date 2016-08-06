@@ -2,9 +2,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-// import module
-import { logoImg } from '../../../../imports/client/module'
-
 // import custom components
 import Header from '../../components/header/header.jsx'
 import FeaturedWork from '../../components/featured-work/featured-work.jsx'
@@ -46,6 +43,7 @@ export default class Index extends Component {
   renderProjects() { // render each project
     return this.state.projects.map((project) => {
       return <PictureBlock key={project._id}
+                           size="col-md-4"
                            link={project.link}
                            src={project.src}
                            title={project.title}
@@ -56,8 +54,7 @@ export default class Index extends Component {
   render() {
     return (
       <div>
-        <Header logoImg={logoImg}
-                title="Vanielle Le"
+        <Header title="Vanielle Le"
                 subtitle="Software Engineer"
                 about={this.state.about} />
 

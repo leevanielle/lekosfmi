@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
+import { logoImg } from '../../../../imports/client/module'
 
 export default class Header extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Header extends Component {
         <div className="jumbotron">
           <div className="container-fluid">
             <div className="col-sm-6">
-              <img id="logo" src={this.props.logoImg} className="img-circle" alt="logo" />
+              <img id="logo" src={logoImg} className="img-circle" alt="logo" />
             </div>
             <div className="col-sm-6">
               <h1 className="title">{this.props.title}</h1>
@@ -27,7 +28,6 @@ export default class Header extends Component {
 // declaring propTypes
 React.propTypes = {
   link: React.PropTypes.string.isRequired,
-  logoImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   about: PropTypes.string.isRequired

@@ -9,8 +9,9 @@ import { title } from '../../imports/client/module'
 
 // import custom components
 import App from '../../client/app/app.jsx'
+import Blog from '../../client/ui/pages/blog/blog.jsx'
 import Index from '../../client/ui/pages/index/index.jsx'
-import Mommy from '../../client/ui/pages/mommy/mommy.jsx'
+
 
 /* Routes */
 FlowRouter.route("/", { // Index
@@ -22,11 +23,11 @@ FlowRouter.route("/", { // Index
   }
 })
 
-FlowRouter.route("/mommy", { // Mommy
+FlowRouter.route("/blog", { // Blog
   action() {
-    title('Mommy ❤️') // heart emoji <3
+    title('Blog')
     mount(App, {
-        content: (<Mommy />)
+        content: (<Blog />)
     })
   }
 })

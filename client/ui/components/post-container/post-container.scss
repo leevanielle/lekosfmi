@@ -1,0 +1,38 @@
+#post-container {
+
+  @media (max-width: 600px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel {
+    border-radius: 5px;
+    border: solid #02b3e4 2px;
+    margin: auto 20px auto 20px;
+    @media (max-width: 768px) {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+
+  .panel-heading {
+    background: #02b3e4;
+    font-size: 24px;
+    border-bottom: solid #02b3e4 2px;
+    @media (max-width: 768px) {
+      border-radius: 0;
+    }
+  }
+
+  .panel-title {
+    color: #fff; // pink
+    margin: 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 450;
+    color: #EB71A6;
+  }
+}
