@@ -20,7 +20,6 @@ ecmascript@0.5.7              # Enable ECMAScript2015+ syntax in app code
 twbs:bootstrap
 fourseven:scss
 kadira:flow-router
-kadira:blaze-layout
 fastclick@1.0.12
 momentjs:moment
 session@1.1.6
@@ -29,6 +28,5 @@ reload@1.1.10
 random@1.0.10
 spacebars@1.0.12
 check@1.2.3
-meteorhacks:fast-render
 mrt:nprogress
 msavin:mongol
