@@ -3,12 +3,10 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 // import custom components
-import Header from '../../components/header/header.jsx'
 import FeaturedWork from '../../components/featured-work/featured-work.jsx'
 import PictureBlock from '../../components/picture-block/picture-block.jsx'
 
 // model
-let about = <span>Welcome to my website. I am passionate about building elegant and robust software. I have experience in working with an array of programming languages––including HTML/CSS, JavaScript, and Python. My prefer web framework is <a href='https://meteor.com/' target="_blank">Meteor</a>. Currently, I am residing in Norman, Oklahoma. In my free time, I enjoy hanging out with friends, meeting new people, learning new things, and of course, coding</span>
 let projects = [
   {
     _id: 0,
@@ -37,7 +35,7 @@ let projects = [
 export default class Index extends Component {
   constructor(props) {
     super(props)
-    this.state = { about, projects } // from model
+    this.state = { projects } // from model
   }
 
   renderProjects() { // render each project
@@ -54,12 +52,7 @@ export default class Index extends Component {
   render() {
     return (
       <div>
-        <Header title="Vanielle Le"
-                subtitle="Software Engineer"
-                about={this.state.about} />
-
-        <FeaturedWork title="Featured Project"
-                      renderPictureBlock={this.renderProjects()} />
+        <FeaturedWork title="Featured Project" renderPictureBlock={this.renderProjects()} />
       </div>
     )
   }

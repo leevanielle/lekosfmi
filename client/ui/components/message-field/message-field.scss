@@ -1,0 +1,18 @@
+.DraftEditor-root {
+  padding: 0 12px 0 12px;
+  font-size: 16px;
+  border-bottom: 2px solid lightgrey;
+  position: relative;
+}
+
+.public-DraftEditorPlaceholder-root {
+  position: absolute;
+}
+
+.public-DraftStyleDefault-block, .public-DraftStyleDefault-ltr {
+  padding-bottom: 10px;
+}
+
+.public-DraftEditorPlaceholder-inner {
+  color: #999;
+}

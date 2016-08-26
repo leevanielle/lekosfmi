@@ -10,6 +10,7 @@ import { title } from '../../imports/client/module'
 // import custom components
 import App from '../../client/app/app.jsx'
 import Blog from '../../client/ui/pages/blog/blog.jsx'
+import Contact from '../../client/ui/pages/contact/contact.jsx'
 import Index from '../../client/ui/pages/index/index.jsx'
 
 
@@ -17,17 +18,20 @@ import Index from '../../client/ui/pages/index/index.jsx'
 FlowRouter.route("/", { // Index
   action() {
     title('Welcome')
-    mount(App, {
-        content: (<Index />)
-    })
+    mount(App, { content: (<Index />) })
+  }
+})
+
+FlowRouter.route("/contact", { // Blog
+  action() {
+    title('Contact')
+    mount(App, { content: (<Contact />) })
   }
 })
 
 FlowRouter.route("/blog", { // Blog
   action() {
     title('Blog')
-    mount(App, {
-        content: (<Blog />)
-    })
+    mount(App, { content: (<Blog />) })
   }
 })

@@ -17,7 +17,7 @@ export default class PageHeader extends Component {
   }
 }
 
-// declaring propTypes
+// Declaring propTypes
 React.propTypes = {
   title: PropTypes.string
 }
