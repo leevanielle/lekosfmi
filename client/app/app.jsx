@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 // import custom components
+import Navigation from '../ui/components/navigation/navigation.jsx'
 import Footer from '../ui/components/footer/footer.jsx'
 
 
@@ -20,6 +21,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Navigation />
         {this.props.content}
         <Footer />
         {this.GoogleAnalytics()}

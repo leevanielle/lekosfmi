@@ -1,6 +1,8 @@
 /* Header styling */
 
 #header {
+  padding-top: 50px;
+
   .title, .jumbotron {
     margin-bottom: 0;
   }
@@ -13,6 +15,10 @@
     width: 140px;
     height: 140px;
     margin-right: 100%;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-right: 0;
+    }
   }
 
   .jumbotron {
@@ -23,6 +29,9 @@
   .title {
     color: #02b3e4;
     text-align: right;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   .subtitle {
@@ -32,6 +41,10 @@
    padding-bottom: 5px;
    border-bottom: 1px #fff solid;
    text-align: right;
+   @media (max-width: 768px) {
+     text-align: center;
+     margin-top: 15px;
+   }
  }
 
 a {
@@ -39,27 +52,6 @@ a {
    &:hover {
      color: #fff;
      text-decoration: underline;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* Header styling */
-
-  header {
-    #logo {
-      margin-right: 0;
-      //text-align: center;
-    }
-
-    .title {
-      text-align: center;
-    }
-
-    .subtitle {
-      text-align: center;
-      margin-top: 15px;
     }
   }
 }
