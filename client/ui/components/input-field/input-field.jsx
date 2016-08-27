@@ -4,16 +4,12 @@ import { render } from 'react-dom'
 
 
 export default class InputField extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { } // from model
-  }
-
   render() {
     return (
       <div className="form-group">
         <input type={this.props.type}
                className="form-control"
+               name={this.props.name}
                placeholder={this.props.placeholder} />
       </div>
     )
@@ -23,5 +19,6 @@ export default class InputField extends Component {
 // Declaring propTypes
 React.propTypes = {
   type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   placeholder: PropTypes.string
 }
