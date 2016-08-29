@@ -13,8 +13,12 @@ let about = <span>Welcome to my website. I am passionate about building elegant 
 export default class Header extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      about
+    this.state = { about }
+  }
+
+  renderAbout() {
+    if (FlowRouter.current().path === '/') {
+      return (<p className="text-left">{this.state.about}</p>)
     }
   }
 
@@ -30,7 +34,7 @@ export default class Header extends Component {
               <h1 className="title">Vanielle Le</h1>
               <p className="subtitle"><i>Software Engineer</i></p>
             </div>
-            <p className="text-left">{this.state.about}</p>
+            {this.renderAbout()}
           </div>
         </div>
       </header>

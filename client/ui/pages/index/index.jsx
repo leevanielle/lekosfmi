@@ -53,6 +53,54 @@ export default class Index extends Component {
     return (
       <div>
         <FeaturedWork title="Featured Project" renderPictureBlock={this.renderProjects()} />
+
+        <div id="skill-progress">
+          <div className="container-fluid">
+            <div className="col-md-1">
+              <h5 className="">JavaScript</h5>
+            </div>
+
+            <div className="col-md-11">
+              <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="container-fluid">
+            <div className="col-md-1">
+              <h5 className="">Python</h5>
+            </div>
+
+            <div className="col-md-11">
+              <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="container-fluid">
+            <div className="col-md-1">
+              <h5 className="">HTML/CSS</h5>
+            </div>
+
+            <div className="col-xs-11">
+              <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
       </div>
     )
   }
