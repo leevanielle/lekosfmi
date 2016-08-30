@@ -4,6 +4,7 @@ import { render } from 'react-dom'
 
 // import custom components
 import FeaturedWork from '../../components/featured-work/featured-work.jsx'
+import PageHeader from '../../components/page-header/page-header.jsx'
 import PictureBlock from '../../components/picture-block/picture-block.jsx'
 
 // model
@@ -31,11 +32,49 @@ let projects = [
   }
 ]
 
+let languages = [
+  {
+    _id: 0,
+    name: 'HTML/CSS'
+  },
+  {
+    _id: 1,
+    name: 'JavaScript / NodeJS'
+  },
+  {
+    _id: 2,
+    name: 'Python'
+  },
+  {
+    _id: 3,
+    name: 'Ruby'
+  }
+]
+
+let technologies = [
+  {
+    _id: 0,
+    name: 'Meteor'
+  },
+  {
+    _id: 1,
+    name: 'MongoDB'
+  },
+  {
+    _id: 3,
+    name: 'React'
+  },
+  {
+    _id: 2,
+    name: 'Webapp2'
+  }
+]
+
 
 export default class Index extends Component {
   constructor(props) {
     super(props)
-    this.state = { projects } // from model
+    this.state = { projects, languages, technologies } // from model
   }
 
   renderProjects() { // render each project
@@ -49,6 +88,33 @@ export default class Index extends Component {
     })
   }
 
+  renderLanguages() {
+    return this.state.languages.map((language) => {
+      return (
+        <div key={language._id} className="container-fluid">
+            <h5 className="">{language.name}</h5>
+            <div className="progress">
+              <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      )
+    })
+  }
+
+  renderTechnologies() {
+    return this.state.technologies.map((technology) => {
+      return (
+        <div key={technology._id} className="container-fluid">
+            <h5 className="">{technology.name}</h5>
+            <div className="progress">
+              <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      )
+    })
+  }
+
+
   render() {
     return (
       <div>
@@ -56,50 +122,21 @@ export default class Index extends Component {
 
         <div id="skill-progress">
           <div className="container-fluid">
-            <div className="col-md-1">
-              <h5 className="">JavaScript</h5>
+
+
+            <div className="col-sm-6">
+              <PageHeader title="Language" />
+              {this.renderLanguages()}
             </div>
 
-            <div className="col-md-11">
-              <div className="progress">
-                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
 
-                </div>
-              </div>
+            <div className="col-sm-6">
+              <PageHeader title="Technology" />
+              {this.renderTechnologies()}
             </div>
+
           </div>
-
-          <div className="container-fluid">
-            <div className="col-md-1">
-              <h5 className="">Python</h5>
-            </div>
-
-            <div className="col-md-11">
-              <div className="progress">
-                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container-fluid">
-            <div className="col-md-1">
-              <h5 className="">HTML/CSS</h5>
-            </div>
-
-            <div className="col-xs-11">
-              <div className="progress">
-                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
+        </div> {/* #skill-progress */}
 
       </div>
     )

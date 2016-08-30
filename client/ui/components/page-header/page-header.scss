@@ -2,4 +2,7 @@
   margin: 40px auto 40px auto;
   padding-bottom: 0;
   border-bottom: solid lightgrey 1px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }

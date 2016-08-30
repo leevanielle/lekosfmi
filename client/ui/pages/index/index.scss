@@ -50,13 +50,30 @@
 
 
 #skill-progress {
+  margin: 15px 0;
+
+  #page-header {
+    margin: 20px auto;
+  }
+
   .container-fluid {
-    padding: 0 30px;
+    padding: 0 0;
   }
 
   h5 {
-    margin: 1px 0 0 0;
-    text-align: right;
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  .progress {
+    height: 30px;
+    border-radius: 2px;
+    box-shadow: none;
+    margin-bottom: 10px;
+
+    .progress-bar {
+      box-shadow: none;
+    }
   }
 
   .progress-bar-success {
