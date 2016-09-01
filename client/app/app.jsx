@@ -1,5 +1,5 @@
 // import main components
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
 // import custom components
@@ -21,4 +21,9 @@ export default class App extends Component {
       </div>
     )
   }
+}
+
+
+React.propTypes = {
+
 }

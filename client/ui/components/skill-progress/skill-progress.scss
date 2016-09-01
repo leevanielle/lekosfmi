@@ -1,0 +1,51 @@
+#skill-progress {
+  margin: 15px 0;
+
+  @media (max-width: 768px) {
+    .col-lg-6 .container-fluid {
+      padding: 0 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin: 15px 15px;
+  }
+
+  #page-header {
+    margin: 20px auto;
+
+    @media (max-width: 1500px) {
+      margin: 20px 15px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 20px 0;
+      padding: 0;
+    }
+  }
+
+  .container-fluid {
+    padding: 0 0;
+
+    @media (max-width: 1500px) {
+      padding: 0 15px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  .col-lg-6 {
+    padding: 0;
+  }
+
+  h5 {
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+
+  span {
+    color: #000;
+  }
+}

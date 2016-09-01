@@ -31,3 +31,5 @@ check@1.2.3
 mrt:nprogress
 msavin:mongol
 shell-server
+coffeescript
+react-meteor-data

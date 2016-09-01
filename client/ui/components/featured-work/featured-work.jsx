@@ -10,7 +10,7 @@ export default class FeaturedWork extends Component {
   render() {
     return (
       <div id="featured-work">
-        <div className="container">
+        <div className="container-fluid">
           <PageHeader title={this.props.title} />
           {this.props.renderPictureBlock}
         </div>
