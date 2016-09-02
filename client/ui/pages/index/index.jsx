@@ -4,6 +4,7 @@ import { createContainer } from 'meteor/react-meteor-data'
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
+
 // Import collections
 import {
   FeatureProjects,
@@ -33,42 +34,15 @@ export default class Index extends Component {
     })
   }
 
-  activeScroll(_id, style) {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $(`#${_id}`)
-        .animate(style)
-        .addClass("progress-bar-striped active")
-      setTimeout(() => {
-        $(`#${_id}`).removeClass("progress-bar-striped active")
-      }, 1000)
-    } else if ($(window).scrollTop() + $(window).height() != $(document).height()) {
-      $(`#${_id}`)
-        .css({width: '0%'})
-        .removeClass("progress-bar-striped active")
-    }
-  }
-
-  componentDidMount() {
-    $(window).scroll(() => {
-      this.props.languages.map((l) => {
-        this.activeScroll(l._id, l.style)
-      })
-
-      this.props.technologies.map((t) => {
-        this.activeScroll(t._id, t.style)
-      })
-    })
-  }
-
   renderLanguages() { // render each language
     return this.props.languages.map((l) => {
-      return (<Progressbar key={l._id} progressId={l._id} name={l.name} />)
+      return (<Progressbar key={l._id} progressId={l._id} name={l.name} style={l.style} />)
     })
   }
 
   renderTechnologies() { // render each technology
     return this.props.technologies.map((t) => {
-      return (<Progressbar key={t._id} progressId={t._id} name={t.name} />)
+      return (<Progressbar key={t._id} progressId={t._id} name={t.name} style={t.style} />)
     })
   }
 

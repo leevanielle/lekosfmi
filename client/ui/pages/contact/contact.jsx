@@ -53,7 +53,7 @@ export default class Contact extends Component {
             <MessageField placeholder="Message" name="message" />
             <Btn type="submit" className="btn btn-default pull-right" name="Submit" />
         </form>
-
+        
         <ProfessionalMedia />
       </div>
     )

@@ -10,7 +10,8 @@ export default class Progressbar extends Component {
           <h5 className="">{this.props.name}</h5>
           <div className="progress">
             <div id={this.props.progressId}
-                 className="progress-bar"></div>
+                 className="progress-bar"
+                 style={this.props.style}></div>
         </div>
       </div>
     )
@@ -20,5 +21,6 @@ export default class Progressbar extends Component {
 
 React.propTypes = {
   progressId: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired
+  name: React.PropTypes.string.isRequired,
+  style: React.PropTypes.object.isRequired
 }
