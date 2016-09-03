@@ -1,0 +1,40 @@
+#admin {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto auto;
+  background: #fff;
+
+.jumbotron {
+    padding: 0;
+    margin: 0;
+    height: 100em;
+    background: radial-gradient(circle 30em, #fff, #e44389) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btn-default {
+    border-radius: 0;
+    background: transparent;
+    border-color: transparent;
+    color: #e44389;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .btn-group.open .dropdown-toggle {
+    box-shadow: none;
+  }
+
+  #page-header {
+    margin: 20px 0;
+  }
+
+  .container-fluid {
+    margin: 0 15px;
+  }
+}

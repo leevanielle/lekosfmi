@@ -33,3 +33,6 @@ msavin:mongol
 shell-server
 coffeescript
 react-meteor-data
+email
+accounts-ui
+accounts-github

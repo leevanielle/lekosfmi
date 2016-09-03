@@ -1,17 +1,17 @@
-// import from main components / modules
+// Import from main components / modules
 import { FlowRouter } from 'meteor/kadira:flow-router'
 import React from 'react'
 import { mount } from 'react-mounter'
 
-// import modules
+// Import modules
 import { title } from '../../imports/client/module'
 
-// import containers components
-//import IndexContainer from '../../client/containers/index-container.js'
+// Import components
+import AppLayout from '../../client/app/app-layout.jsx'
+import AdminLayout from '../../client/app/admin-layout.jsx'
 
-// import components
-import App from '../../client/app/app.jsx'
-import Blog from '../../client/ui/pages/blog/blog.jsx'
+// Import pages
+import Admin from '../../client/ui/pages/admin/admin.jsx'
 import Contact from '../../client/ui/pages/contact/contact.jsx'
 import Index from '../../client/ui/pages/index/index.jsx'
 
@@ -20,20 +20,20 @@ import Index from '../../client/ui/pages/index/index.jsx'
 FlowRouter.route("/", { // Index
   action() {
     title('Welcome')
-    mount(App, { content: (<Index />) })
+    mount(AppLayout, { content: (<Index />) })
   }
 })
 
 FlowRouter.route("/contact", { // Contact
   action() {
     title('Contact')
-    mount(App, { content: (<Contact />) })
+    mount(AppLayout, { content: (<Contact />) })
   }
 })
 
-FlowRouter.route("/blog", { // Blog
+FlowRouter.route("/admin", { // Contact
   action() {
-    title('Blog')
-    mount(App, { content: (<Blog />) })
+    title('Admin')
+    mount(AdminLayout, { content: (<Admin />) })
   }
 })

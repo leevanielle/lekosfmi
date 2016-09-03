@@ -9,7 +9,7 @@ import Navigation from '../ui/components/navigation/navigation.jsx'
 import Footer from '../ui/components/footer/footer.jsx'
 
 
-export default class App extends Component {
+export default class AppLayout extends Component {
   render() {
     return (
       <div>
