@@ -20,7 +20,6 @@ import PictureBlock from '../../components/picture-block/picture-block.jsx'
 import Progressbar from '../../components/progressbar/progressbar.jsx'
 import SkillProgress from '../../components/skill-progress/skill-progress.jsx'
 
-//import IndexContainer from '../../../containers/index-container.js'
 
 export default class Index extends Component {
   renderProjects() { // render each project

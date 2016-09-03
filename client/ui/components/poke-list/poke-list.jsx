@@ -5,20 +5,9 @@ import { render } from 'react-dom'
 
 
 export default class PokeList extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: this.props.name
-    }
-  }
-
-  getUrl(props) {
-    console.log(this.props)
-  }
-
   render() {
     return (
-      <li id="poke-list" key={this.props._id} onClick={this.onClick}>
+      <li id="poke-list" key={this.props._id} onClick={this.props.onClick}>
         <a>{this.props.name}</a>
       </li>
     )
@@ -27,5 +16,6 @@ export default class PokeList extends Component {
 
 React.propTypes = {
   _id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 }

@@ -4,16 +4,16 @@ import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
 
-export default class Pokemon extends Component {
+export default class PokemonGif extends Component {
   render() {
     return (
       <div>
-        <div id="pokemon" style={this.props.poke}></div>
+          <img id="pokemon-gif" src={this.props.url} />
       </div>
     )
   }
 }
 
 React.propTypes = {
-  poke: PropTypes.object
+  url: PropTypes.string.isRequired
 }

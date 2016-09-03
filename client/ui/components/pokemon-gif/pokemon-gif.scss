@@ -1,0 +1,20 @@
+#pokemon-gif {
+  display: block;
+  margin: auto auto;
+  width: 140px;
+  height: 150px;
+  right: 0;
+  left: 0;
+  bottom: 25%;
+  position: absolute;
+
+  @media (max-width: 500px) {
+    bottom: 23%;
+  }
+
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  -moz-transform: scale(2);
+  transform: scale(2);
+}

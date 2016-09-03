@@ -2,16 +2,19 @@
 { Mongo } = require 'meteor/mongo'
 
 # Collections
-{ FeatureProjects, SkillLanguages, SkillTechnology } = require '../../collections/collections.js'
+{ FeatureProjects, Pokemons, SkillLanguages, SkillTechnology } = require '../../collections/collections.js'
 
 # Seeds
-{ seedFeatureProjects, seedSkillLanguages, seedSkillTechnology } = require './seed.coffee'
+{ seedFeatureProjects, seedPokemons, seedSkillLanguages, seedSkillTechnology } = require './seed.coffee'
 
 
 Meteor.startup ->
 
   if FeatureProjects.find().count() is 0
     FeatureProjects.insert(s) for s in seedFeatureProjects
+
+  if Pokemons.find().count() is 0
+    Pokemons.insert(s) for s in seedPokemons
 
   if SkillLanguages.find().count() is 0
     SkillLanguages.insert(s) for s in seedSkillLanguages
