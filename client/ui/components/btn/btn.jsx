@@ -6,7 +6,9 @@ import { render } from 'react-dom'
 export default class Btn extends React.Component {
   render() {
     return (
-      <button type={this.props.type} className={this.props.className}>{this.props.name}</button>
+      <button type={this.props.type}
+              className={this.props.className}
+              onClick={this.props.onClick}>{this.props.name}</button>
     )
   }
 }
@@ -15,5 +17,6 @@ export default class Btn extends React.Component {
 React.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.string.isRequired,
+  onClick: PropTypes.func
 }

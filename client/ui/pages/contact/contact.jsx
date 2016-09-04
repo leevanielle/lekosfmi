@@ -14,7 +14,13 @@ import ProfessionalMedia from '../../components/professional-media/professional-
 export default class Contact extends Component {
   constructor(props) {
     super(props)
-    this.state = { } // from model
+    this.state = {
+      message: 'Contact Me' // default message
+    }
+  }
+
+  inputFocus() {
+    this.setState({ message: 'Contact Me' })
   }
 
   handleSubmit(e) {
@@ -27,12 +33,16 @@ export default class Contact extends Component {
     let message = e.target.message.value
 
     if (firstName && lastName && email && message) {
-      Meteor.call('messages.insert', firstName, lastName, email, message, (err) => {
+
+      Meteor.call('send.email', firstName, lastName, email, message, (err) => {
         if (!err) {
           e.target.firstName.value = ''
           e.target.lastName.value = ''
           e.target.email.value = ''
           e.target.message.value = ''
+
+          // Success Message
+          this.setState({ message: "Message Sent 🚀" })
         }
       })
     }
@@ -42,15 +52,15 @@ export default class Contact extends Component {
     return (
       <div>
         <form id="contact-page" className="container" onSubmit={this.handleSubmit.bind(this)}>
-          <PageHeader title="Contact Me" />
+          <PageHeader title={this.state.message} />
             <div className="col-sm-6">
-              <InputField type="text" placeholder="First Name" name="firstName" />
+              <InputField type="text" placeholder="First Name" name="firstName" onFocus={this.inputFocus.bind(this)} />
             </div>
             <div className="col-sm-6">
-              <InputField type="text" placeholder="Last Name" name="lastName" />
+              <InputField type="text" placeholder="Last Name" name="lastName" onFocus={this.inputFocus.bind(this)} />
             </div>
-            <InputField type="email" placeholder="Email" name="email" />
-            <MessageField placeholder="Message" name="message" />
+            <InputField type="email" placeholder="Email" name="email" onFocus={this.inputFocus.bind(this)} />
+            <MessageField placeholder="Message" name="message" onFocus={this.inputFocus.bind(this)} />
             <Btn type="submit" className="btn btn-default pull-right" name="Submit" />
         </form>
 

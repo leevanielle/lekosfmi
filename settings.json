@@ -1,0 +1,11 @@
+{
+  "public": {},
+  "private": {
+    "oAuth": {
+      "github": {
+        "clientId": "9561d41d077c7bc30999",
+        "secret": "314ba6dd97cf2470ddabba1a4b5f6b25997cb668"
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default class InputField extends Component {
                onFocus={this.props.onFocus}
                onBlur={this.props.onBlur}
                onChange={this.props.onChange}
-               autoComplete="off"
+               autoComplete="new-password"
                value={this.props.value} />
       </div>
     )

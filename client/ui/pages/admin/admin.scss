@@ -26,12 +26,20 @@
     }
   }
 
+  .btn-submit {
+    background: #e44389;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
   .btn-group.open .dropdown-toggle {
     box-shadow: none;
   }
 
   #page-header {
     margin: 20px 0;
+    text-align: left;
   }
 
   .container-fluid {

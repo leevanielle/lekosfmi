@@ -5,31 +5,44 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 // Import custom components
+import Btn from '../../components/btn/btn.jsx'
 import Pokemon from '../pokemon/pokemon.jsx'
 import InputField from '../../components/input-field/input-field.jsx'
 import PageHeader from '../../components/page-header/page-header.jsx'
 
 
 export default class Admin extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { username: '', password: '' }
+  }
+
   componentDidMount() {
     $('.navbar').css({ background: 'transparent' })
   }
 
-  inputFocus() {
-    if (screen.width >= 768) {
-      $('.container-fluid').animate({ 'margin-bottom': 80 })
-    }
+  handleUsername(e) {
+    this.setState({ username: e.target.value })
   }
 
-  inputBlur() {
-    $('.container-fluid').animate({ 'margin-bottom': 15 })
+  handlePassword(e) {
+    this.setState({ password: e.target.value })
   }
 
-  handleInput(e) {
+  handleForm(e) {
     e.preventDefault()
-    let hashcode = e.target.value
-    if (hashcode === "Kobydanny7") {
-      console.log('Success!')
+
+    let username = this.state.username
+    let password = this.state.password
+
+    if (username && password) {
+      Meteor.loginWithPassword(username, password, (err) => {
+        if (err) {
+          console.log(err.reason)
+        } else {
+          console.log('Sucess')
+        }
+      })
     }
   }
 
@@ -42,11 +55,19 @@ export default class Admin extends Component {
         <div className="container-fluid">
           <PageHeader title="Admin" />
 
-            <InputField type="password"
-                        placeholder="Please Type in the Keycode"
-                        onFocus={this.inputFocus}
-                        onBlur={this.inputBlur}
-                        onChange={this.handleInput.bind(this)} />
+          <form autoComplete="false" onSubmit={this.handleForm.bind(this)}>
+             <InputField type="text"
+                         name="username"
+                         placeholder="Username"
+                         onBlur={this.handleUsername.bind(this)} />
+
+              <InputField type="password"
+                          name="password"
+                          placeholder="keycode"
+                          onBlur={this.handlePassword.bind(this)} />
+
+              <Btn type="submit" className="btn btn-default btn-submit pull-right" name="Submit" />
+          </form>
         </div>
       </div>
     )

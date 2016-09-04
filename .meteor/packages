@@ -35,4 +35,5 @@ coffeescript
 react-meteor-data
 email
 accounts-ui
-accounts-github
+accounts-base
+accounts-password

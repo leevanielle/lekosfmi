@@ -1,3 +1,4 @@
+{ Accounts } = require 'meteor/accounts-base'
 { Meteor } = require 'meteor/meteor'
 { Mongo } = require 'meteor/mongo'
 
@@ -8,7 +9,11 @@
 { seedFeatureProjects, seedPokemons, seedSkillLanguages, seedSkillTechnology } = require './seed.coffee'
 
 
+
 Meteor.startup ->
+
+  # Email smpt
+  process.env.MAIL_URL = 'smtp://lephankoby.meteor%40gmail.com:sehqpbztzzfvlyas@smtp.gmail.com:465/'
 
   if FeatureProjects.find().count() is 0
     FeatureProjects.insert(s) for s in seedFeatureProjects

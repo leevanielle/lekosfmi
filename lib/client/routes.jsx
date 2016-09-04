@@ -31,9 +31,16 @@ FlowRouter.route("/contact", { // Contact
   }
 })
 
-FlowRouter.route("/admin", { // Contact
+FlowRouter.route("/admin", { // Admin
   action() {
     title('Admin')
     mount(AdminLayout, { content: (<Admin />) })
+  }
+})
+
+FlowRouter.route("/register", { // Register
+  action() {
+    title('Register')
+    mount(AdminLayout, { content: (<Register />) })
   }
 })

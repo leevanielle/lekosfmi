@@ -10,6 +10,7 @@ export default class MessageField extends React.Component {
         <textarea className="form-control"
                   name={this.props.name}
                   placeholder={this.props.placeholder}
+                  onFocus={this.props.onFocus}
                   rows="5"></textarea>
       </div>
     )
@@ -19,5 +20,6 @@ export default class MessageField extends React.Component {
 // Declaring propTypes
 React.propTypes = {
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
+  onFocus: PropTypes.func
 }
