@@ -6,7 +6,12 @@ import { render } from 'react-dom'
 export default class PictureBlock extends Component {
   render() {
     return (
-      <div id="picture-block" className={this.props.size} style={{background: `url(${this.props.src}) center left fixed` }}>
+      <div id="picture-block"
+           className={this.props.size}
+           style={{background: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
+                                url(${this.props.src})
+                                center center` }}>
+
         <a className="text-center" href={this.props.link} target="_blank">
           {/*}<img src={this.props.src} className="img-responsive img-rounded" /> */}
           <h2 className="img-title">{this.props.title}</h2>
