@@ -15,12 +15,12 @@ export default class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      message: 'Contact Me' // default message
+      message: "Let's chat!" // default message
     }
   }
 
   inputFocus() {
-    this.setState({ message: 'Contact Me' })
+    this.setState({ message: "Let's chat!" })
   }
 
   handleSubmit(e) {

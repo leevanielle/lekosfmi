@@ -37,13 +37,15 @@
   .subtitle {
    color: darkgrey;
    font-size: 25px;
-   margin-bottom: 15px;
+   margin-top: 0;
+   margin-bottom: 20px;
    padding-bottom: 5px;
    border-bottom: 1px lightgrey solid;
    text-align: right;
    @media (max-width: 768px) {
      text-align: center;
-     margin-top: 15px;
+     margin-top: 10px;
+     margin-bottom: 10px;
    }
  }
 
@@ -53,5 +55,10 @@ a {
      color: #fff;
      text-decoration: underline;
     }
+  }
+
+  p {
+
+    margin-bottom: 0;
   }
 }

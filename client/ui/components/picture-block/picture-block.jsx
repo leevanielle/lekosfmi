@@ -8,7 +8,7 @@ export default class PictureBlock extends Component {
     return (
       <div id="picture-block"
            className={this.props.size}
-           style={{background: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
+           style={{background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),
                                 url(${this.props.src})
                                 center center` }}>
 
