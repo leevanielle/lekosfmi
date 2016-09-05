@@ -21,7 +21,7 @@ export default class Header extends Component {
     if (FlowRouter.current().path === '/') {
       return (<p className="text-left">{indexPage}</p>)
     } else if (FlowRouter.current().path === '/contact') {
-      return (<p className="text-left">{contactPage}</p>)
+      return (<p className="text-right">{contactPage}</p>)
     }
   }
 
