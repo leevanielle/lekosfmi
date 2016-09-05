@@ -8,14 +8,19 @@ export default class Footer extends Component {
     let date = new Date()
     let year = date.getFullYear()
 
-    return `© ${year} Vanielle Le`
+    return `© ${year} Lekosfmi`
   }
 
   render() {
     return (
       <footer>
-        <div className="container">
-          <p>{this.copyright()}</p>
+        <div className="container-fluid">
+          <div className="col-md-6">
+            <p>{this.copyright()}</p>
+          </div>
+          <div className="col-md-6">
+            <p className="design">Developed by Lekosfmi <span className="glyphicon glyphicon-heart"></span></p>
+          </div>
         </div>
       </footer>
     )
