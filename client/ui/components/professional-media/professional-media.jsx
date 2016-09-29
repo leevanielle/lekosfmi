@@ -11,7 +11,7 @@ export default class ProfessionalMedia extends Component {
         <div className="container-fluid text-center">
           <div className="col-sm-4">
           <a href="https://www.linkedin.com/in/lekosfmi" target="_blank">
-            <img src="https://res.cloudinary.com/pixmi/image/upload/v1472431618/ujbwl9wywkzdbbgukdke.png" className="" width="90" />
+            <img src="https://res.cloudinary.com/pixmi/image/upload/v1473564151/iptr2hmkjwor0knssycb.png" className="" width="90" />
             <h4>Linkedin</h4>
           </a>
           </div>
