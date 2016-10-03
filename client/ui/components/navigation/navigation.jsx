@@ -10,6 +10,12 @@ let navLinks = [
   },
   {
     _id: 1,
+    url: 'https://medium.com/@lekosfmi',
+    name: 'Blog',
+    target: '_bank'
+  },
+  {
+    _id: 2,
     url: '/contact',
     name: 'Contact'
   }
@@ -29,7 +35,7 @@ export default class Navigation extends Component {
     return this.state.navLinks.map((link) => {
       return (
         <li key={link._id}>
-          <a href={link.url} onClick={this.closeNavbar}>{link.name}</a>
+          <a href={link.url} onClick={this.closeNavbar} target={link.target}>{link.name}</a>
         </li>
       )
     })

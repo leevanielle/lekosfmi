@@ -19,7 +19,7 @@ import Index from '../../client/ui/pages/index/index.jsx'
 /* Routes */
 FlowRouter.route("/", { // Index
   action() {
-    title('Welcome')
+    title('Home')
     mount(AppLayout, { content: (<Index />) })
   }
 })
