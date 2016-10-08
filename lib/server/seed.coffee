@@ -14,6 +14,21 @@ exports.seedFeatureProjects = [
   src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298410/yrgxuzdwmmwxuoxaado3.jpg'
   title: 'Chat App'
   description: 'Small chat app inspired by Slack'
+,
+  link: 'http://pokeplay.lekosfmi.com/'
+  src: 'http://www.pokemon20.com/assets/img/global/og-shareimg.jpg'
+  title: 'Poké Play'
+  description: 'Display Pokémon on a beautiful background'
+,
+  link: 'http://erapok.org/'
+  src: 'http://livehdwallpaper.com/wp-content/uploads/2015/05/American-Flag-Wallpapers-American-Flag-Backgrounds.jpg'
+  title: 'ERAPOK'
+  description: 'Emergency Responders Assistance Program'
+,
+  link: 'http://coffee.lekosfmi.com/'
+  src: 'https://coffeewelove.files.wordpress.com/2014/04/heart-coffee-beans-1920x1080.jpg'
+  title: 'Coffee Tracker'
+  description: 'Graphy & Track Coffee Usages'
 ]
 
 #  Pokemon
@@ -38,34 +53,34 @@ exports.seedPokemons = [
 exports.seedSkillLanguages = [
   name: 'HTML/CSS'
   style:
-    width: '85%'
+    width: '95%'
 ,
   name: 'JavaScript / NodeJS',
   style:
-    width: '70%'
+    width: '85%'
 ,
   name: 'Python'
   style:
-    width: '46%'
+    width: '70%'
 ,
   name: 'Ruby'
   style:
-    width: '40%'
+    width: '60%'
 ]
 
 # Skill Technology
 exports.seedSkillTechnology = [
   name: 'Meteor'
   style:
-    width: '74%'
+    width: '84%'
 ,
   name: 'MongoDB / NoSQL'
   style:
-    width: '55%'
+    width: '77%'
 ,
   name: 'React'
   style:
-    width: '50%'
+    width: '69%'
 ,
   name: 'Webapp2'
   style:

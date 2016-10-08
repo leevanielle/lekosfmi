@@ -4,7 +4,6 @@ import { createContainer } from 'meteor/react-meteor-data'
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-
 // Import collections
 import {
   FeatureProjects,

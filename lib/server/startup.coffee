@@ -9,12 +9,17 @@
 { seedFeatureProjects, seedPokemons, seedSkillLanguages, seedSkillTechnology } = require './seed.coffee'
 
 
-
 Meteor.startup ->
 
   # Email smpt
   process.env.MAIL_URL = 'smtp://lephankoby.meteor%40gmail.com:sehqpbztzzfvlyas@smtp.gmail.com:465/'
 
+  # Reset collections
+  FeatureProjects.remove({}) if FeatureProjects.find().count() > 0
+  SkillLanguages.remove({}) if SkillLanguages.find().count() > 0
+  SkillTechnology.remove({}) if SkillTechnology.find().count() > 0
+
+  # Insert after reset
   if FeatureProjects.find().count() is 0
     FeatureProjects.insert(s) for s in seedFeatureProjects
 
