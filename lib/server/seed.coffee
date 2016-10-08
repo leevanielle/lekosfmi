@@ -28,7 +28,7 @@ exports.seedFeatureProjects = [
   link: 'http://coffee.lekosfmi.com/'
   src: 'https://coffeewelove.files.wordpress.com/2014/04/heart-coffee-beans-1920x1080.jpg'
   title: 'Coffee Tracker'
-  description: 'Graphy & Track Coffee Usages'
+  description: 'Graph & Track Coffee Usages'
 ]
 
 #  Pokemon

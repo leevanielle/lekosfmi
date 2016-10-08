@@ -15,12 +15,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="container-fluid">
-          <div className="col-md-6">
-            <p>{this.copyright()}</p>
-          </div>
-          <div className="col-md-6">
-            <p className="design">Developed by Lekosfmi <span className="glyphicon glyphicon-heart"></span></p>
-          </div>
+          <p className="design"><span className="glyphicon glyphicon-heart"></span> Developed by Lekosfmi <span className="glyphicon glyphicon-heart"></span></p>
         </div>
       </footer>
     )
