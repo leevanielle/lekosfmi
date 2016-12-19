@@ -1,3 +1,3 @@
-export const logoImg = 'http://res.cloudinary.com/pixmi/image/upload/v1473036128/10788981_n8nvi3.jpg'
+export const logoImg = 'https://res.cloudinary.com/pixmi/image/upload/v1482179895/evtf14lbtnpp8yhyynfz.jpg'
 
-export const title = (text) => document.title = `${text} | Lekosfmi`
+export const title = text => document.title = `${text} | Lekosfmi`
