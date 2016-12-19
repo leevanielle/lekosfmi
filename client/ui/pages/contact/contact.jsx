@@ -11,7 +11,7 @@ import PageHeader from '../../components/page-header/page-header.jsx'
 import ProfessionalMedia from '../../components/professional-media/professional-media.jsx'
 
 
-export default class Contact extends Component {
+export default class ContactPage extends Component {
   constructor(props) {
     super(props)
     this.state = {

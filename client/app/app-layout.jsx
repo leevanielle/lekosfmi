@@ -15,15 +15,10 @@ export default class AppLayout extends Component {
       <div>
         <Navigation />
         <Header />
-        {this.props.content}
+        {this.props.container || this.props.content}
         <Footer />
         <GoogleAnalytics />
       </div>
     )
   }
-}
-
-
-React.propTypes = {
-
 }

@@ -50,12 +50,3 @@ export default class Pokemon extends Component {
     )
   }
 }
-
-
-export default PokemonContainer = createContainer(() => {
-  Meteor.subscribe('pokemons')
-
-  const pokemons = Pokemons.find().fetch()
-
-  return { pokemons }
-}, Pokemon)

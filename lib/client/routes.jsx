@@ -12,35 +12,37 @@ import AdminLayout from '../../client/app/admin-layout.jsx'
 
 // Import pages
 import Admin from '../../client/ui/pages/admin/admin.jsx'
-import Contact from '../../client/ui/pages/contact/contact.jsx'
-import Index from '../../client/ui/pages/index/index.jsx'
+import ContactPage from '../../client/ui/pages/contact/contact.jsx'
+
+// Import containers
+import IndexContainer from '../../client/containers/index.jsx'
 
 
 /* Routes */
-FlowRouter.route("/", { // Index
-  action() {
-    title('Home')
-    mount(AppLayout, { content: (<Index />) })
-  }
+FlowRouter.route("/", {
+    action() {
+        title('Home')
+        mount(AppLayout, { container: (<IndexContainer />) })
+    }
 })
 
-FlowRouter.route("/contact", { // Contact
-  action() {
-    title('Contact')
-    mount(AppLayout, { content: (<Contact />) })
-  }
+FlowRouter.route("/contact", {
+    action() {
+        title('Contact')
+        mount(AppLayout, { content: (<ContactPage />) })
+    }
 })
 
-FlowRouter.route("/admin", { // Admin
+FlowRouter.route("/admin", {
   action() {
     title('Admin')
-    mount(AdminLayout, { content: (<Admin />) })
+    mount(AdminLayout, { container: (<Admin />) })
   }
 })
 
-FlowRouter.route("/register", { // Register
+FlowRouter.route("/register", {
   action() {
     title('Register')
-    mount(AdminLayout, { content: (<Register />) })
+    mount(AdminLayout, { container: (<Register />) })
   }
 })
