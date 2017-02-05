@@ -15,7 +15,7 @@ export default class Header extends Component {
     }
 
     renderAbout() {
-        let text = <span>I am passionate about building elegant and robust software. I have experienced in working with an array of programming languages and frameworks––including JavaScript, <a href="http://rubyonrails.org/">Ruby on Rails</a>, and Python. My prefer web framework is <a href='https://meteor.com/' target="_blank">Meteor</a>. Currently, I am residing in San Jose, California, and a software engineer at <a href="https://advocate.io/">Advocate</a>.</span>
+        let text = <span>I am passionate about building elegant and robust software. I have experienced in working with an array of programming languages and frameworks––including JavaScript (Node), <a href="http://rubyonrails.org/">Ruby on Rails</a>, and Python. My prefer web framework is <a href='https://meteor.com/' target="_blank">Meteor</a>. Currently, I am residing in San Jose, California, and working as a software engineer at <a href="https://advocate.io/">Advocate</a>.</span>
 
         if (FlowRouter.current().path === '/') {
             return (<p className="text-left">{text}</p>)
