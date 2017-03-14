@@ -16,7 +16,7 @@ exports.seedFeatureProjects = [
   description: 'Small chat app inspired by Slack'
 ,
   link: 'http://pokeplay.lekosfmi.com/'
-  src: 'http://www.pokemon20.com/assets/img/global/og-shareimg.jpg'
+  src: 'http://5dwallpaper.com/wp-content/uploads/2016/05/pikachu-wallpaper-HD-Free-Cute-Pikachu-Wallpapers-HD.jpg'
   title: 'Poké Play'
   description: 'Display Pokémon on a beautiful background'
 ,
