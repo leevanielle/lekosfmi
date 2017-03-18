@@ -37,7 +37,7 @@ exports.seedFeatureProjects = [
 ,
   link: 'https://lekosfmi-rasengan.herokuapp.com/'
   src: 'http://wallpapercave.com/wp/IWa0tao.jpg'
-  title: 'Simple Remix Animation'
+  title: 'Simple Animation'
   description: 'Simple rasengan developed using ThreeJS'
 ,
   link: 'http://lekosfmi-simple-blog.appspot.com/'
