@@ -43,7 +43,7 @@ exports.seedFeatureProjects = [
   link: 'http://lekosfmi-simple-blog.appspot.com/'
   src: 'https://blog.evernote.com/in/files/2016/05/Travel-Blog.jpg'
   title: 'Medium Clone'
-  description: 'Blog developed using Jinja2 and Flask––all python'
+  description: 'Blog developed using Jinja2 and Flask––all in python'
 ]
 
 #  Pokemon
