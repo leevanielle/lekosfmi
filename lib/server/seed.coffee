@@ -29,6 +29,21 @@ exports.seedFeatureProjects = [
   src: 'https://coffeewelove.files.wordpress.com/2014/04/heart-coffee-beans-1920x1080.jpg'
   title: 'Coffee Tracker'
   description: 'Graph & Track Coffee Usages'
+,
+  link: 'https://github.com/lekosfmi/twitter_sentiment'
+  src: 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Twitter-Wallpapers-HD.jpg'
+  title: 'Tweet Sentiment'
+  description: 'Sentiment analysis of Tweets using deep learning'
+,
+  link: 'https://lekosfmi-rasengan.herokuapp.com/'
+  src: 'http://wallpapercave.com/wp/IWa0tao.jpg'
+  title: 'Simple Remix Animation'
+  description: 'Simple rasengan developed using ThreeJS'
+,
+  link: 'http://lekosfmi-simple-blog.appspot.com/'
+  src: 'https://blog.evernote.com/in/files/2016/05/Travel-Blog.jpg'
+  title: 'Medium Clone'
+  description: 'Blog developed using Jinja2 and Flask––all python'
 ]
 
 #  Pokemon

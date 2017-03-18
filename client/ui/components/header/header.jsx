@@ -11,11 +11,17 @@ import { logoImg } from '../../../../imports/client/module'
 export default class Header extends Component {
     constructor(props) {
         super(props)
-        this.state = { about: 'Hello World' } // default
+        this.state = { about: '' } // default
     }
 
     renderAbout() {
-        let text = <span>I am passionate about building elegant and robust software. I have experienced in working with an array of programming languages and frameworks––including JavaScript (Node), <a href="http://rubyonrails.org/">Ruby on Rails</a>, and Python. My prefer web framework is <a href='https://meteor.com/' target="_blank">Meteor</a>. Currently, I am residing in San Jose, California, and working as a software engineer at <a href="https://advocate.io/">Advocate</a>.</span>
+        let text = <span>
+                    I'm a full-stack software engineer with a passion for building great products.
+                    My tendency is towards the front-end where I love to develop intuitive UI/UX experience.
+                    I strive to consistently learn and improve my skills.
+                    Additionally, I am fluent in a number of programming languages and frameworks––including JavaScript, <a href='https://meteor.com/' target="_blank">Meteor</a>, and Python.
+                    Currently, I am residing in San Francisco, California, and working as a software engineer at <a href="https://advocate.io/" target="_blank">Advocate</a>.
+                   </span>
 
         if (FlowRouter.current().path === '/') {
             return (<p className="text-left">{text}</p>)

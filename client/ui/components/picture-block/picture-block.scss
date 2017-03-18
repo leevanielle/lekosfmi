@@ -1,6 +1,7 @@
 #picture-block {
   height: 350px;
   cursor: pointer;
+  text-align: center;
 
   @media (min-width: 768px) {
     &:nth-child(2) {

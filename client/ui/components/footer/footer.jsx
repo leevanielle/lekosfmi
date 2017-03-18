@@ -15,7 +15,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="container-fluid">
-          <p className="design"><span className="glyphicon glyphicon-heart"></span> Developed by Lekosfmi <span className="glyphicon glyphicon-heart"></span></p>
+          <p className="design"><span className="glyphicon glyphicon-heart"></span> Developed by Vanielle Le <span className="glyphicon glyphicon-heart"></span></p>
         </div>
       </footer>
     )
