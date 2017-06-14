@@ -11,11 +11,11 @@ export default class SkillProgress extends Component {
     return (
       <div id="skill-progress">
         <div className="container-fluid">
-          <div className="col-lg-6">
+          <div className="col-lg-12">
             <PageHeader title="Language" />
             {this.props.renderLanguages}
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-12">
             <PageHeader title="Technology" />
             {this.props.renderTechnologies}
           </div>

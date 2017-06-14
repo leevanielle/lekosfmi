@@ -95,7 +95,11 @@ exports.seedSkillTechnology = [
 ,
   name: 'React'
   style:
-    width: '69%'
+    width: '80%'
+,
+  name: 'Angular'
+  style:
+    width: '75%'
 ,
   name: 'Webapp2'
   style:
