@@ -10,12 +10,17 @@ let navLinks = [
   },
   {
     _id: 1,
+    url: '/photography',
+    name: 'Photography'
+  },
+  {
+    _id: 2,
     url: 'https://medium.com/@lekosfmi',
     name: 'Blog',
     target: '_bank'
   },
   {
-    _id: 2,
+    _id: 3,
     url: '/contact',
     name: 'Contact'
   }

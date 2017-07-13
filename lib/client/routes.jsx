@@ -13,6 +13,7 @@ import AdminLayout from '../../client/app/admin-layout.jsx'
 // Import pages
 import Admin from '../../client/ui/pages/admin/admin.jsx'
 import ContactPage from '../../client/ui/pages/contact/contact.jsx'
+import PhotographyPage from '../../client/ui/pages/photography/photography.jsx'
 
 // Import containers
 import IndexContainer from '../../client/containers/index.jsx'
@@ -30,6 +31,13 @@ FlowRouter.route("/contact", {
     action() {
         title('Contact')
         mount(AppLayout, { content: (<ContactPage />) })
+    }
+})
+
+FlowRouter.route("/photography", {
+    action() {
+        title('Photography')
+        mount(AppLayout, { content: (<PhotographyPage />) })
     }
 })
 
