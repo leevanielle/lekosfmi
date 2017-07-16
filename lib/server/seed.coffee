@@ -46,6 +46,42 @@ exports.seedFeatureProjects = [
   description: 'Blog developed using Jinja2 and Flask––all in python'
 ]
 
+# Images
+exports.seedImages = [
+  name: 'Palace of Fine Arts'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499921817/lchewlce0iypdlmvh8lo.jpg'
+,
+  name: 'Clarion Alley - Look Up'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499921965/mnjr7bzmbi2zgstnutm8.jpg'
+,
+  name: '',
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550680/bihrvd9kv4wx8o2wbwjg.jpg'
+,
+  name: ''
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499922362/krbe6ewm3sisi8osit2k.jpg'
+,
+  name: '',
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499549872/lpimzpdlidfirbyhtl4z.jpg'
+,
+  name: 'Clarion Alley - Portrait Transgender'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499922303/su4cupibmfssvln5ropf.jpg'
+,
+  name: 'Santa Monica Beach Swing'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499922043/zv2afkyrdrcep5g4ohud.jpg'
+,
+  name: 'Oklahoma City Look Up'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499922172/nrsd1xpd3bjwbvs15eox.jpg'
+,
+  name: ''
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550336/oubhxhuollmtzfghed4v.jpg'
+,
+  name: ''
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550695/t6pvlpmtswsefpqsehim.jpg'
+,
+  name: ''
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550680/bihrvd9kv4wx8o2wbwjg.jpg'
+]
+
 #  Pokemon
 exports.seedPokemons = [
   name: 'Charizard'
