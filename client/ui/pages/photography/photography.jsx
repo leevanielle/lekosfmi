@@ -55,9 +55,7 @@ export default class PhotographyPage extends Component {
   render() {
     return (
       <div id="photography-page">
-
         <div id="images">
-
           {this.renderImages()}
         </div>
       </div>
