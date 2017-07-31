@@ -18,6 +18,7 @@ import PhotographyPage from '../../client/ui/pages/photography/photography.jsx'
 // Import containers
 import IndexContainer from '../../client/containers/index.jsx'
 import PhotographyContainer from '../../client/containers/photography.jsx'
+import PhotoContainer from '../../client/containers/photo.jsx'
 
 
 /* Routes */
@@ -39,6 +40,13 @@ FlowRouter.route("/photography", {
     action() {
         title('Photography')
         mount(AppLayout, { container: (<PhotographyContainer />) })
+    }
+})
+
+FlowRouter.route("/photography/:id", {
+    action(params) {
+        title('Photography')
+        mount(AppLayout, { container: (<PhotoContainer imageId={params.id} />) })
     }
 })
 

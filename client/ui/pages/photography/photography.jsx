@@ -13,6 +13,7 @@ export default class PhotographyPage extends Component {
     this.state = {
       filterIndex: 0,
       filterStyle: [
+        '',
         'grayscale(100%)',
         'sepia(100%)',
         'contrast(4)',
@@ -35,6 +36,10 @@ export default class PhotographyPage extends Component {
     console.log(this.state.filterIndex)
   }
 
+  onGetRoutingID(id) {
+    FlowRouter.go(`/photography/${id}`)
+  }
+
   renderFilterStyle() {
     return {
       'filter': this.state.filterStyle[this.state.filterIndex]
@@ -46,7 +51,7 @@ export default class PhotographyPage extends Component {
       return (<img key={idx}
                    alt={image.name}
                    src={image.src}
-                   onClick={this.onIncrementFilterIndex.bind(this)}
+                   onClick={this.onGetRoutingID.bind(this, image._id)}
                    style={this.renderFilterStyle()}
               />)
     });
