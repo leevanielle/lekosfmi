@@ -1,12 +1,15 @@
-.progress {
-  height: 30px;
-  border-radius: 2px;
-  box-shadow: none;
-  margin-bottom: 10px;
-  background-color: transparent;
+#progress-bar {
+
+  .progress {
+    height: 30px;
+    border-radius: 2px;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 15px 0;
+  }
 
   .progress-bar {
-    background: linear-gradient(to left, #BFF475, #f9fff0);
+    background: linear-gradient(to left, #fff, #000);
     box-shadow: none;
   }
 }

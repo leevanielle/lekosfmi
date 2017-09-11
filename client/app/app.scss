@@ -10,11 +10,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: #e44389;
+  color: #000;
+  font-weight: 300;
+  letter-spacing: 1.5px;
 }
 
-header .jumbotron,
-footer {
+header .jumbotron {
 
   /* Background-image is darken to help show text */
 

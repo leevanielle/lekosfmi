@@ -1,30 +1,36 @@
 .navbar-default {
-  background-color: #e44389;
+  background-color: #000;
   margin-bottom: 0;
   position: fixed;
   width: 100%;
   border-width: 0;
+  border-bottom: 1px solid #000;
   z-index: 100;
   border-radius: 0;
   opacity: .9;
+
 
   @media (max-width: 768px) {
     padding: 0 15px 0 15px;
   }
 
   .navbar-header .navbar-brand {
+    color: #e44389;
     color: #fff;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 400;
     margin-left: 0;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    transition: ease 0.2s all;
+
     &:hover, &:focus {
-      color: #fff;
+      color: #e44389;
     }
   }
 
   .navbar-toggle {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
     color: #fff;
     margin: 0 10px 0 0;
@@ -37,18 +43,20 @@
 
   .nav > li > a,
   .nav > li > a:focus {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 16px;
     color: #fff;
+    letter-spacing: 1.5px;
+
     @media (max-width: 768px) {
-      text-align: right;
+      text-align: center;
     }
   }
 
   .nav > li > a:hover,
   .nav > li > a:focus:hover {
-    color: #fff;
+    transition: ease 0.2s all;
+    color: #e44389;
   }
 
   .nav > li.active > a,

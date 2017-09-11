@@ -8,14 +8,13 @@ export default class Btn extends React.Component {
     return (
       <button type={this.props.type}
               className={this.props.className}
-              onClick={this.props.onClick}>{this.props.name}</button>
+              onClick={this.props.onClick}>{this.props.children}</button>
     )
   }
 }
 
 // Declaring propTypes
 React.propTypes = {
-  name: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func

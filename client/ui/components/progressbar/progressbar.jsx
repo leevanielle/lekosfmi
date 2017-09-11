@@ -6,9 +6,10 @@ import { render } from 'react-dom'
 export default class Progressbar extends Component {
   render() {
     return (
-      <div className="container-fluid">
-          <h5 className="">{this.props.name}</h5>
+      <div id="progress-bar" className="container-fluid">
+
           <div className="progress">
+            <h5>{this.props.name}</h5>
             <div id={this.props.progressId}
                  className="progress-bar"
                  style={this.props.style}></div>

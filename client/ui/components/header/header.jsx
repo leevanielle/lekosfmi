@@ -34,14 +34,9 @@ export default class Header extends Component {
             <header id="header">
               <div className="jumbotron">
                 <div className="container-fluid">
-                  <div className="col-sm-6 text-center">
                     <img id="logo" src={logoImg} className="img-circle" alt="logo" />
-                  </div>
-                  <div className="col-sm-6">
-                    <h1 className="title">Vanielle Le</h1>
-                    <p className="subtitle"><i>Software Engineer</i></p>
-                  </div>
-                  {this.renderAbout()}
+                    <p className="subtitle">Software Engineer</p>
+                  {/* {this.renderAbout()} */}
                 </div>
               </div>
             </header>

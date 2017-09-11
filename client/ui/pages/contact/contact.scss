@@ -1,4 +1,10 @@
 #contact-page {
+
+  @media(min-width: 900px) {
+    border: 30px solid #000;
+    border-bottom-width: 0;
+  }
+
   .col-sm-6 {
     padding: 0;
   }

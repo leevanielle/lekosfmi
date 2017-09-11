@@ -1,5 +1,17 @@
 #skill-progress {
-  margin: 15px 0;
+  background: #000;
+
+  @media(min-width: 900px) {
+    padding: 30px 90px;
+    border: 30px solid #000;
+    border-top-width: 0;
+    border-bottom: 1px solid #fff;
+
+    .col-lg-12 {
+      padding: 0;
+      margin: 20px 0;
+    }
+  }
 
   @media (max-width: 768px) {
     .col-lg-6 .container-fluid {
@@ -7,12 +19,14 @@
     }
   }
 
-  @media (min-width: 768px) {
-    margin: 15px 15px;
-  }
-
   #page-header {
     margin: 20px auto;
+
+    h1 {
+      color: #fff;
+      letter-spacing: 5px;
+      margin-top: 10px;
+    }
 
     @media (max-width: 1500px) {
       margin: 20px 15px;
@@ -41,8 +55,11 @@
   }
 
   h5 {
-    margin: 0 0 10px 0;
     text-align: left;
+    position: absolute;
+    color: #fff;
+    left: 25px;
+    letter-spacing: 5px;
   }
 
   span {

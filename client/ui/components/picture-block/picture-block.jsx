@@ -9,10 +9,12 @@ export default class PictureBlock extends Component {
       <a href={this.props.link} target="_blank">
         <div id="picture-block"
            className={this.props.size}
-           style={{background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),
+
+           style={{background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
                                 url(${this.props.src})
-                                center center`}}>
-                                
+                                center center`}}
+          >
+
           <h2 className="img-title">{this.props.title}</h2>
           <p className="description">{this.props.description}</p>
         </div>

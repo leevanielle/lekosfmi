@@ -1,15 +1,39 @@
 /* Featured work styling */
 
 #featured-work {
-  margin: 0 30px 40px 30px;
+  margin: 0 auto;
+  display: block;
 
-  @media(max-width: 768px) {
+  @media(min-width: 900px) {
+    display: flex;
     margin: 0;
+    padding: 0 90px;
+    border: 30px solid #000;
+    border-bottom-width: 0;
   }
 
-  @media(min-width: 768px) {
-    #page-header {
-      margin: 40px 15px;
+  #page-header {
+    padding-bottom: 15px;
+    text-align: left;
+    margin-bottom: 0;
+
+    @media(max-width: 1079px) {
+      text-align: center;
+    }
+  }
+
+  .container-fluid {
+    text-align: center;
+
+    a {
+      display: inline-block;
+    }
+
+    @media(max-width: 889px) {
+      // on tablet and mobile
+      a {
+        display: block;
+      }
     }
   }
 
@@ -24,6 +48,7 @@
     -o-transition: all ease-in .3s;
     -ms-transition: all ease-in .3s;
     transition: all ease-in .3s;
+
     &:hover {
       -webkit-filter: brightness(70%);
       filter: brightness(70%);
@@ -38,7 +63,6 @@
     left: 0;
     right: 0;
     color: #fff;
-    text-shadow: 1px 1px 10px #000;
   }
 
   .img-title {
@@ -47,6 +71,8 @@
 
   .description {
     top: 60%;
+    font-weight: 300;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -64,7 +90,7 @@
   /* Main styling */
 
   #featured-work {
-    .container, .col-md-4 {
+    .container, .col-md-6 {
       padding: 0;
     }
 

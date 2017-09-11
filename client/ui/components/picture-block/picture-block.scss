@@ -1,17 +1,17 @@
 #picture-block {
   height: 350px;
+  width: 350px;
   cursor: pointer;
   text-align: center;
+  margin: 50px;
+  padding: 0px;
+  border-radius: 50%;
 
-  @media (min-width: 768px) {
-    &:nth-child(2) {
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
-
-    &:last-child {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
+  @media (max-width: 889px) {
+    // on tablet and mobile
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
 }

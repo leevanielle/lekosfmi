@@ -1,7 +1,9 @@
 .btn-default {
-  background-color: #e44389;
+  background-color: #000;
   color: #fff;
-  border-color: #e44389;
+  border-color: #000;
+  transition: all ease 0.1s;
+
   &:hover, &:active, &:active:hover, &:focus, &:active:focus  {
     background-color: #e44389;
     color: #fff;

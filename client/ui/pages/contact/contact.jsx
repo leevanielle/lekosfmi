@@ -50,8 +50,8 @@ export default class ContactPage extends Component {
 
   render() {
     return (
-      <div>
-        <form id="contact-page" className="container" onSubmit={this.handleSubmit.bind(this)}>
+      <div id="contact-page">
+        <form className="container" onSubmit={this.handleSubmit.bind(this)}>
           <PageHeader title={this.state.message} />
             <div className="col-sm-6">
               <InputField type="text" placeholder="First Name" name="firstName" onFocus={this.inputFocus.bind(this)} />
@@ -61,7 +61,9 @@ export default class ContactPage extends Component {
             </div>
             <InputField type="email" placeholder="Email" name="email" onFocus={this.inputFocus.bind(this)} />
             <MessageField placeholder="Message" name="message" onFocus={this.inputFocus.bind(this)} />
-            <Btn type="submit" className="btn btn-default pull-right" name="Submit" />
+            <Btn type="submit" className="btn btn-default pull-right">
+              <span className="glyphicon glyphicon-send"></span>
+            </Btn>
         </form>
 
         <ProfessionalMedia />

@@ -3,24 +3,36 @@
 footer {
   /* margin-top: 30px; */
   padding: 15px;
-  color: #fff;
+  background: #000;
   font-weight: bold;
 
   .container-fluid {
     margin: 10px 0;
   }
 
+  .glyphicon-heart {
+    color: #e44389;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   p {
     margin-bottom: 0;
-    margin: 15px;
+    margin: 5px;
+    transition: all 0.1s ease;
+    cursor: default;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    &:hover > .glyphicon-heart {
+      color: #e44389;
+    }
   }
 
   .design {
     text-align: center;
-  }
-
-  .glyphicon-heart {
-    color: #e44389;
   }
 
   @media (max-width: 768px) {

@@ -16,7 +16,7 @@ export default class IndexPage extends Component {
   renderProjects() {
     return this.props.projects.map((p) => {
      return  <PictureBlock key={p._id}
-                           size="col-md-4"
+                           size="col-md-6"
                            link={p.link}
                            src={p.src}
                            title={p.title}
@@ -39,7 +39,8 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        <FeaturedWork title="Featured Project" renderPictureBlock={this.renderProjects()} />
+        <FeaturedWork title="Featured Projects" renderPictureBlock={this.renderProjects()} />
+
         <SkillProgress renderLanguages={this.renderLanguages()} renderTechnologies={this.renderTechnologies()} />
       </div>
     )
