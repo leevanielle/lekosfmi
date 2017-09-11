@@ -8,11 +8,11 @@ let navLinks = [
     url: '/',
     name: 'Home'
   },
-  {
-    _id: 1,
-    url: '/photography',
-    name: 'Photography'
-  },
+  // {
+  //   _id: 1,
+  //   url: '/photography',
+  //   name: 'Photography'
+  // },
   {
     _id: 2,
     url: 'https://medium.com/@lekosfmi',
