@@ -46,13 +46,23 @@
    font-size: 25px;
    margin-top: 20px;
    margin-bottom: 20px;
-   letter-spacing: 1.5px;
+   letter-spacing: 2px;
+
+
+   a {
+     transition: all ease 0.1s;
+     text-decoration: none;
+     color: #fff;
+
+     &:hover {
+       text-decoration: none;
+     }
+   }
 
    @media (max-width: 736px) {
-     text-align: center;
+     font-size: 18px;
      margin-top: 10px;
      margin-bottom: 10px;
-     border-width: 0;
    }
  }
 

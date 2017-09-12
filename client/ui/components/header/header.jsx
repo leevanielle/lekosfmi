@@ -35,7 +35,14 @@ export default class Header extends Component {
               <div className="jumbotron">
                 <div className="container-fluid">
                     <img id="logo" src={logoImg} className="img-circle" alt="logo" />
-                    <p className="subtitle">Software Engineer</p>
+                    <p className="subtitle">Vanielle Le</p>
+                    <p className="subtitle">
+                      📍 <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076399,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">
+                        San Francisco, California
+                      </a>
+                    </p>
+                    <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
+
                   {/* {this.renderAbout()} */}
                 </div>
               </div>
