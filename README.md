@@ -2,7 +2,7 @@
 
 I'm a software engineer residing in the SF Bay Area, California. 
 
-Feel free to help yourself to explore my [Github](https://github.com/lekosfmi) or [Website](http://www.lekosfmi.com/).
+Feel free to help yourself to explore my [Github](https://github.com/lekosfmi) and [Website](http://www.lekosfmi.com/).
 
 Below are some projects that I have worked on and been involved currently and/or in the past. 
 
