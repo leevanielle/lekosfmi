@@ -21,7 +21,7 @@ Below are some projects that I have worked on and been involved currently and/or
 - [Slack clone with Meteor](https://github.com/lekosfmi/chat)
 - [Restful webapp using Angular and Node](https://github.com/lekosfmi/restful-app)
 - [Medium clone using Webapp2](https://github.com/lekosfmi/simple-blog)
-- [ERAPOK](https://github.com/ERAPOK/erapok)
+- [ERAPOK](http://www.erapok.org/)
 
 #### Command Line Apps & Utilities:
 - [Chengyu Matching](https://github.com/lekosfmi/chengyu-match)
