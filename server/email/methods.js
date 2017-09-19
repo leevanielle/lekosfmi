@@ -9,7 +9,7 @@ Meteor.methods({
     this.unblock()
 
     Email.send({
-      from: email,
+      from: '<lephanvanielle@gmail.com>',
       to: 'lephanvanielle@gmail.com',
       subject: "Lekosfmi's Form",
       text: `${lastName}, ${firstName} - [${email}]: ${message}`
