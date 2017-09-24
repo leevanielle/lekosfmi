@@ -15,23 +15,23 @@ h6 {
   letter-spacing: 1.5px;
 }
 
-header .jumbotron {
-
-  /* Background-image is darken to help show text */
-
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/pixmi/image/upload/v1505107508/pngo6znx9uecj3gfkddv.jpg") no-repeat center bottom fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  /*
-   * Remove bottom margin from header
-   * Should not effect footer since default is already at 0
-  */
-
-  margin-bottom: 0;
-}
+// header .jumbotron {
+//
+//   /* Background-image is darken to help show text */
+//
+//   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/pixmi/image/upload/v1505107508/pngo6znx9uecj3gfkddv.jpg") no-repeat center bottom fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//
+//   /*
+//    * Remove bottom margin from header
+//    * Should not effect footer since default is already at 0
+//   */
+//
+//   margin-bottom: 0;
+// }
 
 .progress-bar {
   border-top-right-radius: 10px;

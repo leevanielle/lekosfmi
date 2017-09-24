@@ -10,23 +10,30 @@ import { logoImg } from '../../../../imports/client/module'
 
 export default class Header extends Component {
     constructor(props) {
-        super(props)
-        this.state = { about: '' } // default
+      super(props);
     }
 
     renderAbout() {
-        let text = <span>
-                    I'm a full-stack software engineer with a passion for building great products.
-                    My tendency is towards the front-end where I love to develop intuitive UI/UX experience.
-                    I strive to consistently learn and improve my skills.
-                    I am fluent in a number of programming languages––including JavaScript and Python.
-                    The frameworks and libraries I have experiences in include <a href="https://angular.io" target="_blank">Angular</a>, <a href="https://facebook.github.io/react/" target="_blank">React</a>, and <a href="http://flask.pocoo.org/" target="_blank">Flask</a>.
-                    Currently, I am residing in <a href="https://www.google.com/maps?q=mountain+view+california&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiP5fGqgKPTAhXKwVQKHdkkCIUQ_AUICCgB" target="_blank">Mountain View, California</a>, and working as a software engineer at <a href="https://archsys.io/" target="_blank">Arch Systems</a>.
-                   </span>
+      let text = <span>
+                  I'm a full-stack software engineer with a passion for building great products.
+                  My tendency is towards the front-end where I love to develop intuitive UI/UX experience.
+                  I strive to consistently learn and improve my skills.
+                  I am fluent in a number of programming languages––including JavaScript and Python.
+                  The frameworks and libraries I have experiences in include <a href="https://angular.io" target="_blank">Angular</a>, <a href="https://facebook.github.io/react/" target="_blank">React</a>, and <a href="http://flask.pocoo.org/" target="_blank">Flask</a>.
+                  Currently, I am residing in <a href="https://www.google.com/maps?q=mountain+view+california&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiP5fGqgKPTAhXKwVQKHdkkCIUQ_AUICCgB" target="_blank">Mountain View, California</a>, and working as a software engineer at <a href="https://archsys.io/" target="_blank">Arch Systems</a>.
+                 </span>
 
-        if (FlowRouter.current().path === '/') {
-            return (<p className="text-left">{text}</p>)
-        }
+      if (FlowRouter.current().path === '/') {
+        return (<p className="text-left">{text}</p>)
+      }
+    }
+
+    renderParticles() {
+      console.log(require('../../../../public/particles.json'))
+      console.log(particlesJS('jumbotron'))
+      particlesJS.load('header', "../../../../public/particles.json", function() {
+        console.log('Loaded!')
+      });
     }
 
     render() {
@@ -42,6 +49,8 @@ export default class Header extends Component {
                       </a>
                     </p>
                     <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
+
+                    {this.renderParticles()}
 
                   {/* {this.renderAbout()} */}
                 </div>
