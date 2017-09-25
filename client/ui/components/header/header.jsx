@@ -50,10 +50,10 @@ export default class Header extends Component {
           },
           "line_linked": {
             "enable": true,
-            "distance": 300,
-            "color": "#e44389",
+            "distance": 250,
+            "color": "#fff",
             "opacity": 1,
-            "width": 2
+            "width": 5
           },
           "move": {
             "enable": true,
