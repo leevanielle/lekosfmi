@@ -1,6 +1,10 @@
 /* Header styling */
-
 #header {
+  canvas {
+    position: absolute;
+    background: #000;
+    z-index: 0;
+  }
 
   .container-fluid {
     margin: auto auto;
@@ -28,6 +32,8 @@
   }
 
   .jumbotron {
+    background: transparent;
+    position: relative;
     padding: 65px 20px 20px 20px;
     border-radius: 0;
   }

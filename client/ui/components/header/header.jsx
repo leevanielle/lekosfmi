@@ -6,11 +6,73 @@ import { Session } from 'meteor/session'
 
 // import custom modules
 import { logoImg } from '../../../../imports/client/module'
+import Particles from 'react-particles-js'
 
 
 export default class Header extends Component {
     constructor(props) {
-      super(props);
+      super(props)
+      this.state = {
+        particlesParam: {
+        "particles": {
+          "number": {
+            "value": 50
+          },
+          "color": {
+            "value": "#000"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 10,
+              "color": "#000"
+            }
+          },
+          "opacity": {
+            "value": 1,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 5,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 10,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 10,
+              "size_min": 10,
+              "sync": true
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 300,
+            "color": "#e44389",
+            "opacity": 1,
+            "width": 2
+          },
+          "move": {
+            "enable": true,
+            "speed": 10,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": true,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "retina_detect": true
+        }
+      }
     }
 
     renderAbout() {
@@ -28,17 +90,10 @@ export default class Header extends Component {
       }
     }
 
-    renderParticles() {
-      console.log(require('../../../../public/particles.json'))
-      console.log(particlesJS('jumbotron'))
-      particlesJS.load('header', "../../../../public/particles.json", function() {
-        console.log('Loaded!')
-      });
-    }
-
     render() {
         return (
             <header id="header">
+              <Particles params={this.state.particlesParam} />
               <div className="jumbotron">
                 <div className="container-fluid">
                     <img id="logo" src={logoImg} className="img-circle" alt="logo" />
@@ -49,8 +104,6 @@ export default class Header extends Component {
                       </a>
                     </p>
                     <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
-
-                    {this.renderParticles()}
 
                   {/* {this.renderAbout()} */}
                 </div>

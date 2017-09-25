@@ -3,6 +3,9 @@
 #featured-work {
   margin: 0 auto;
   display: block;
+  background: #fff;
+  position: relative;
+  z-index: 1;
 
   @media(min-width: 900px) {
     display: flex;
