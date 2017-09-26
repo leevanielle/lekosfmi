@@ -65,8 +65,6 @@ export default class ContactPage extends Component {
               <span className="glyphicon glyphicon-send"></span>
             </Btn>
         </form>
-
-        <ProfessionalMedia />
       </div>
     )
   }

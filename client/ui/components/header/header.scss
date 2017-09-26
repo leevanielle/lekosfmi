@@ -16,7 +16,7 @@
   }
 
   a, p, span {
-    color: #000
+    color: #fff
   }
 
   #logo {
@@ -54,39 +54,35 @@
    margin-bottom: 20px;
    letter-spacing: 2px;
 
-
    a {
      transition: all ease 0.1s;
      text-decoration: none;
      color: #fff;
+     outline: none;
+     margin: 0;
 
      &:hover {
-       text-decoration: none;
+       color: #e44389;
+       background: transparent;
      }
    }
 
    @media (max-width: 736px) {
-     font-size: 18px;
+     font-size: 14px;
      margin-top: 10px;
      margin-bottom: 10px;
    }
  }
 
-a {
-   text-decoration: underline;
+ .btn-text {
+   font-size: 18px;
 
-   &:hover {
-     color: #e44389;
-     text-decoration: underline;
+   @media (max-width: 736px) {
+     font-size: 12px;
     }
   }
 
   p {
     margin-bottom: 0;
-
-    @media (max-width: 768px) {
-      font-size: 18px;
-      line-height: 1.5;
-    }
   }
 }

@@ -16,16 +16,16 @@ export default class Header extends Component {
         particlesParam: {
         "particles": {
           "number": {
-            "value": 50
+            "value": 40
           },
           "color": {
-            "value": "#000"
+            "value": "#eee"
           },
           "shape": {
             "type": "circle",
             "stroke": {
               "width": 10,
-              "color": "#000"
+              "color": "#F3F9A7"
             }
           },
           "opacity": {
@@ -49,9 +49,9 @@ export default class Header extends Component {
             }
           },
           "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 250,
-            "color": "#fff",
+            "color": "#F3F9A7",
             "opacity": 1,
             "width": 5
           },
@@ -64,7 +64,7 @@ export default class Header extends Component {
             "out_mode": "out",
             "bounce": true,
             "attract": {
-              "enable": false,
+              "enable": true,
               "rotateX": 600,
               "rotateY": 1200
             }
@@ -104,6 +104,11 @@ export default class Header extends Component {
                       </a>
                     </p>
                     <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
+                    <div className="btn-group" role="group" aria-label="...">
+                      <a type="button" href="https://www.linkedin.com/in/lekosfmi/" className="btn btn-text" target="_blank">Linkedin</a>
+                      <a type="button" href="https://twitter.com/@lekosfmi" className="btn btn-text" target="_blank">Twitter</a>
+                      <a type="button" href="https://github.com/lekosfmi" className="btn btn-text">Github</a>
+                    </div>
 
                   {/* {this.renderAbout()} */}
                 </div>
