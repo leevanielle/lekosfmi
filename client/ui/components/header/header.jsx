@@ -105,9 +105,15 @@ export default class Header extends Component {
                     </p>
                     <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
                     <div className="btn-group" role="group" aria-label="...">
-                      <a type="button" href="https://www.linkedin.com/in/lekosfmi/" className="btn btn-text" target="_blank">Linkedin</a>
-                      <a type="button" href="https://twitter.com/@lekosfmi" className="btn btn-text" target="_blank">Twitter</a>
-                      <a type="button" href="https://github.com/lekosfmi" className="btn btn-text">Github</a>
+                      <a type="button" href="https://www.linkedin.com/in/lekosfmi/" className="btn btn-text" target="_blank">
+                        <img src="https://res.cloudinary.com/pixmi/image/upload/v1473564151/iptr2hmkjwor0knssycb.png" className="brand-name" width="30" /> Linkedin
+                      </a>
+                      <a type="button" href="https://github.com/lekosfmi" className="btn btn-text" target="_blank">
+                        <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526279/xajdafxxgj9d8n2nwfz2.png" className="brand-name" width="40" /> Github
+                      </a>
+                      <a type="button" href="https://twitter.com/@lekosfmi" className="btn btn-text" target="_blank">
+                        <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526708/l8qk1apxnkvlgyf1lvx7.png" className="brand-name" width="30" /> Twitter
+                      </a>
                     </div>
 
                   {/* {this.renderAbout()} */}
