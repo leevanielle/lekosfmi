@@ -5,18 +5,28 @@ exports.seedFeatureProjects = [
   title: 'Pixmi'
   description: 'Photo sharing app'
 ,
-  link: 'http://prime-calculate.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1470099759/bbvkpew6dgdeop8rhzbf.png'
-  title: 'Prime Calculate'
-  description: 'Determine whether a number is prime or composite'
+  link: 'http://starry-night.lekosfmi.com/'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798187/bbwnub02pt1fuamycmdn.jpg'
+  title: 'Night Sky'
+  description: 'Stars on a night sky using ThreeJS'
 ,
-  link: 'http://chat.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298410/yrgxuzdwmmwxuoxaado3.jpg'
-  title: 'Chat App'
-  description: 'Small chat app inspired by Slack'
+  link: 'http://pitch-volume.lekosfmi.com/'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798258/zamcusertmuj23jrewx6.jpg'
+  title: 'Pitch & Volume'
+  description: 'Music mapping using ThreeJS and SoundCloud'
+,
+  link: 'http://lekosfmi-simple-blog.appspot.com/'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506799593/m6nwtw6mcggoifvefk0y.jpg'
+  title: 'Medium Clone'
+  description: 'Blog developed using Jinja2 and Flask––all in python'
+,
+  link: 'https://github.com/iotile/ng-iotile-cloud'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506797953/jh5tjzdngvhksqiyiqo2.jpg'
+  title: 'Ng-IOTile-Cloud'
+  description: 'Angular (v2.0+) IOTile Cloud Service'
 ,
   link: 'http://pokeplay.lekosfmi.com/'
-  src: 'http://i47.tinypic.com/if0l07.jpg'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798844/jjnj93fduzxxeynhrfon.jpg'
   title: 'Poké Play'
   description: 'Display Pokémon on a beautiful background'
 ,
@@ -26,24 +36,29 @@ exports.seedFeatureProjects = [
   description: 'Emergency Responders Assistance Program'
 ,
   link: 'http://coffee.lekosfmi.com/'
-  src: 'https://coffeewelove.files.wordpress.com/2014/04/heart-coffee-beans-1920x1080.jpg'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798734/w7d2p7zywnqflbku4mye.jpg'
   title: 'Coffee Tracker'
   description: 'Graph & Track Coffee Usages'
 ,
   link: 'https://github.com/lekosfmi/twitter_sentiment'
-  src: 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Twitter-Wallpapers-HD.jpg'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798913/xxxk0z7c7uxor0wkcm8r.jpg'
   title: 'Tweet Sentiment'
   description: 'Sentiment analysis of Tweets using deep learning'
 ,
-  link: 'https://lekosfmi-rasengan.herokuapp.com/'
-  src: 'http://wallpapercave.com/wp/IWa0tao.jpg'
-  title: 'Simple Animation'
-  description: 'Simple rasengan developed using ThreeJS'
-,
-  link: 'http://lekosfmi-simple-blog.appspot.com/'
-  src: 'https://blog.evernote.com/in/files/2016/05/Travel-Blog.jpg'
-  title: 'Medium Clone'
-  description: 'Blog developed using Jinja2 and Flask––all in python'
+  link: 'http://chat.lekosfmi.com/'
+  src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298410/yrgxuzdwmmwxuoxaado3.jpg'
+  title: 'Chat App'
+  description: 'Small chat app inspired by Slack'
+#   link: 'http://prime-calculate.lekosfmi.com/'
+#   src: 'https://res.cloudinary.com/pixmi/image/upload/v1470099759/bbvkpew6dgdeop8rhzbf.png'
+#   title: 'Prime Calculate'
+#   description: 'Determine whether a number is prime or composite'
+# ,
+#   link: 'https://lekosfmi-rasengan.herokuapp.com/'
+#   src: 'http://wallpapercave.com/wp/IWa0tao.jpg'
+#   title: 'Simple Animation'
+#   description: 'Simple rasengan developed using ThreeJS'
+# ,
 ]
 
 # Images

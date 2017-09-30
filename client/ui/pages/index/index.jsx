@@ -39,7 +39,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        <FeaturedWork title="Featured Projects" renderPictureBlock={this.renderProjects()} />
+        <FeaturedWork title="<My Projects />" renderPictureBlock={this.renderProjects()} />
 
         <SkillProgress renderLanguages={this.renderLanguages()} renderTechnologies={this.renderTechnologies()} />
       </div>
