@@ -58,7 +58,9 @@ export default class Navigation extends Component {
 
               <span className="glyphicon glyphicon-option-horizontal"></span>
             </button>
-            <a className="navbar-brand" href="/">Vanielle Lee</a>
+            <a className="navbar-brand" href="/">
+              <img src="https://res.cloudinary.com/pixmi/image/upload/v1506806946/e3fkuzk75qbxugrpc1hm.png" />
+            </a>
           </div>
 
           <div className="collapse navbar-collapse" id="navbar-mobile">

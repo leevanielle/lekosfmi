@@ -15,14 +15,18 @@
   }
 
   .navbar-header .navbar-brand {
-    color: #e44389;
-    color: #fff;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     margin-left: 0;
     font-size: 18px;
     letter-spacing: 1.5px;
     transition: ease 0.2s all;
+    padding: 5px 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
 
     &:hover, &:focus {
       color: #e44389;
