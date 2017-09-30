@@ -46,6 +46,10 @@
     position: relative;
     padding: 65px 20px 20px 20px;
     border-radius: 0;
+
+    @media (max-width: 400px) {
+      padding-bottom: 10px;
+    }
   }
 
   .title {
@@ -94,5 +98,17 @@
 
   p {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 400px) {
+
+  .btn-group {
+      display: inline-block;
+
+      a {
+        width: 100%;
+        margin: 5px auto;
+      }
+    }
   }
 }
