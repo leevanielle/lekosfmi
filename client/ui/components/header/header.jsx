@@ -90,10 +90,21 @@ export default class Header extends Component {
       }
     }
 
+    componentWillMount() {
+      if (window.screen.width < 600) {
+        this.state.particlesParam.particles.number.value = 15;
+        this.forceUpdate();
+      }
+    }
+
+    renderParticles() {
+      return (<Particles params={this.state.particlesParam} />);
+    }
+
     render() {
         return (
             <header id="header">
-              <Particles params={this.state.particlesParam} />
+              {this.renderParticles()}
               <div className="jumbotron">
                 <div className="container-fluid">
                     <img id="logo" src={logoImg} className="img-circle" alt="logo" />
