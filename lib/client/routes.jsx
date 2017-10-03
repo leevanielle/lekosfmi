@@ -22,11 +22,18 @@ import PhotoContainer from '../../client/containers/photo.jsx'
 
 
 /* Routes */
+FlowRouter.notFound = {
+  action() {
+    title('Home')
+    mount(AppLayout, { container: (<IndexContainer />) })
+  }
+}
+
 FlowRouter.route("/", {
-    action() {
-        title('Home')
-        mount(AppLayout, { container: (<IndexContainer />) })
-    }
+  action() {
+    title('Home')
+    mount(AppLayout, { container: (<IndexContainer />) })
+  }
 })
 
 FlowRouter.route("/contact", {
