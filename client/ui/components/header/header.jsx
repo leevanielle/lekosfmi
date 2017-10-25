@@ -117,7 +117,7 @@ export default class Header extends Component {
                     <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
                     <div className="btn-group" role="group" aria-label="...">
                       <a type="button" href="https://www.linkedin.com/in/lekosfmi/" className="btn btn-text" target="_blank">
-                        <img src="https://res.cloudinary.com/pixmi/image/upload/v1473564151/iptr2hmkjwor0knssycb.png" className="brand-name" width="30" /> Linkedin
+                        <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526538/enz43dhmbdsvsvkgsav3.png" className="brand-name" width="30" /> Linkedin
                       </a>
                       <a type="button" href="https://github.com/lekosfmi" className="btn btn-text" target="_blank">
                         <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526279/xajdafxxgj9d8n2nwfz2.png" className="brand-name" width="40" /> Github
