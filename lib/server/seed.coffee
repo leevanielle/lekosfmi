@@ -97,24 +97,6 @@ exports.seedImages = [
   src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550680/bihrvd9kv4wx8o2wbwjg.jpg'
 ]
 
-#  Pokemon
-exports.seedPokemons = [
-  name: 'Charizard'
-  url: 'http://www.pokestadium.com/sprites/xy/charizard.gif'
-,
-  name: 'Rayquaza'
-  url: 'http://www.pokestadium.com/sprites/xy/rayquaza.gif'
-,
-  name: 'Pikachu'
-  url: 'http://www.pokestadium.com/sprites/xy/pikachu.gif'
-,
-  name: 'Ho-Oh'
-  url: 'http://www.pokestadium.com/sprites/xy/ho-oh.gif'
-,
-  name: 'Yveltal'
-  url: 'http://www.pokestadium.com/sprites/xy/yveltal.gif'
-]
-
 # Skill Languages
 exports.seedSkillLanguages = [
   name: 'HTML/CSS'

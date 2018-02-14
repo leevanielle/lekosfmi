@@ -8,10 +8,8 @@ import { title } from '../../imports/client/module'
 
 // Import components
 import AppLayout from '../../client/app/app-layout.jsx'
-import AdminLayout from '../../client/app/admin-layout.jsx'
 
 // Import pages
-import Admin from '../../client/ui/pages/admin/admin.jsx'
 import ContactPage from '../../client/ui/pages/contact/contact.jsx'
 import PhotographyPage from '../../client/ui/pages/photography/photography.jsx'
 
@@ -55,13 +53,6 @@ FlowRouter.route("/photography/:id", {
         title('Photography')
         mount(AppLayout, { container: (<PhotoContainer imageId={params.id} />) })
     }
-})
-
-FlowRouter.route("/admin", {
-  action() {
-    title('Admin')
-    mount(AdminLayout, { container: (<Admin />) })
-  }
 })
 
 FlowRouter.route("/register", {
