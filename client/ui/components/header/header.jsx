@@ -17,13 +17,13 @@ export default class Header extends Component {
             "value": 100
           },
           "color": {
-            "value": "#f0ff00"
+            "value": "#e44389"
           },
           "shape": {
             "type": "star",
             "stroke": {
-              "width": 2,
-              "color": "#f0ff00"
+              "width": 5,
+              "color": "#e44389"
             }
           },
           "opacity": {
@@ -49,7 +49,7 @@ export default class Header extends Component {
           "line_linked": {
             "enable": false,
             "distance": 10,
-            "color": "#f0ff00",
+            "color": "#e44389",
             "opacity": 1,
             "width": 5
           },

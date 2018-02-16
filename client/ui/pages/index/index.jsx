@@ -42,6 +42,28 @@ export default class IndexPage extends Component {
         <FeaturedWork title="Passion Projects" renderPictureBlock={this.renderProjects()} />
 
         <SkillProgress renderLanguages={this.renderLanguages()} renderTechnologies={this.renderTechnologies()} />
+
+        <div className="container">
+
+        <div className="page-header">
+          <h1>Example page header <small>Subtext for header</small>
+
+          <div className="input-group">
+
+            <input type="text" className="form-control" aria-label="..." />
+            <div className="input-group-btn">
+              <button className="btn btn-default">
+                <span className="glyphicon glyphicon-ok"></span>
+
+              </button>
+            </div>
+          </div>
+
+          </h1>
+
+        </div>
+
+        </div>
       </div>
     )
   }

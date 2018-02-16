@@ -78,7 +78,7 @@
      margin: 0;
 
      &:hover {
-       color: #f0ff00;
+       color: #e44389;
        background: transparent;
      }
    }
@@ -92,6 +92,10 @@
 
  .btn-text {
    font-size: 18px;
+
+   &:hover {
+    color: #e44389 !important;
+   }
 
    @media (max-width: 736px) {
      font-size: 12px;
