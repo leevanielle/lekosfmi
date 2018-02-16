@@ -14,26 +14,26 @@ export default class Header extends Component {
         particlesParam: {
         "particles": {
           "number": {
-            "value": 70
+            "value": 100
           },
           "color": {
-            "value": "#fff"
+            "value": "#f0ff00"
           },
           "shape": {
             "type": "star",
             "stroke": {
-              "width": 5,
-              "color": "#fff"
+              "width": 2,
+              "color": "#f0ff00"
             }
           },
           "opacity": {
             "value": 1,
-            "random": false,
+            "random": true,
             "anim": {
-              "enable": false,
+              "enable": true,
               "speed": 1,
               "opacity_min": 0.1,
-              "sync": true
+              "sync": false
             }
           },
           "size": {
@@ -47,9 +47,9 @@ export default class Header extends Component {
             }
           },
           "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 10,
-            "color": "#fff",
+            "color": "#f0ff00",
             "opacity": 1,
             "width": 5
           },
@@ -60,10 +60,10 @@ export default class Header extends Component {
             "random": true,
             "straight": false,
             "out_mode": "out",
-            "bounce": false,
+            "bounce": true,
             "attract": {
               "enable": true,
-              "rotateX": 600,
+              "rotateX": 1000,
               "rotateY": 1200
             }
           }
