@@ -2,8 +2,9 @@
 #header {
   canvas {
     position: absolute;
-    background: #fff;
+    background: #000;
     z-index: 0;
+    height: 100%;
   }
 
   .container-fluid {
@@ -16,7 +17,7 @@
   }
 
   a, p, span {
-    color: #000
+    color: #fff
   }
 
   .btn-group {
@@ -53,7 +54,7 @@
   }
 
   .title {
-    color: #000;
+    color: #fff;
     text-align: center;
 
     @media (max-width: 736px) {
@@ -62,17 +63,17 @@
   }
 
   .subtitle {
-   color: #000;
+   color: #fff;
    font-size: 25px;
    margin-top: 20px;
    margin-bottom: 20px;
    letter-spacing: 2px;
-   font-weight: 400;
+   font-weight: 300;
 
    a {
      transition: all ease 0.1s;
      text-decoration: none;
-     color: #000;
+     color: #fff;
      outline: none;
      margin: 0;
 
