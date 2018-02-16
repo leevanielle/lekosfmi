@@ -4,8 +4,6 @@ import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 import { Session } from 'meteor/session'
 
-// import custom modules
-import { logoImg } from '../../../../imports/client/module'
 import Particles from 'react-particles-js'
 
 
@@ -16,16 +14,16 @@ export default class Header extends Component {
         particlesParam: {
         "particles": {
           "number": {
-            "value": 40
+            "value": 70
           },
           "color": {
-            "value": "#eee"
+            "value": "#000"
           },
           "shape": {
-            "type": "circle",
+            "type": "star",
             "stroke": {
-              "width": 10,
-              "color": "#F3F9A7"
+              "width": 5,
+              "color": "#000"
             }
           },
           "opacity": {
@@ -33,14 +31,14 @@ export default class Header extends Component {
             "random": false,
             "anim": {
               "enable": false,
-              "speed": 5,
+              "speed": 1,
               "opacity_min": 0.1,
-              "sync": false
+              "sync": true
             }
           },
           "size": {
-            "value": 10,
-            "random": true,
+            "value": 2,
+            "random": false,
             "anim": {
               "enable": true,
               "speed": 10,
@@ -49,20 +47,20 @@ export default class Header extends Component {
             }
           },
           "line_linked": {
-            "enable": false,
-            "distance": 250,
-            "color": "#F3F9A7",
+            "enable": true,
+            "distance": 10,
+            "color": "#000",
             "opacity": 1,
             "width": 5
           },
           "move": {
             "enable": true,
-            "speed": 10,
+            "speed": 2,
             "direction": "none",
             "random": true,
             "straight": false,
             "out_mode": "out",
-            "bounce": true,
+            "bounce": false,
             "attract": {
               "enable": true,
               "rotateX": 600,
@@ -107,7 +105,7 @@ export default class Header extends Component {
               {this.renderParticles()}
               <div className="jumbotron">
                 <div className="container-fluid">
-                    <img id="logo" src={logoImg} className="img-circle" alt="logo" />
+                    <img id="logo" src="./header-image/profile-picture-bw.jpg" className="img-circle" alt="logo" />
                     <p className="subtitle">Vanielle Lee</p>
                     <p className="subtitle">
                       📍 <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076399,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">
