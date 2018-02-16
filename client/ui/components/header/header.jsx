@@ -122,6 +122,10 @@ export default class Header extends Component {
                         {/* <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526279/xajdafxxgj9d8n2nwfz2.png" className="brand-name" width="40" /> */}
                         Github
                       </a>
+                      <a type="button" href="https://instagram.com/lekosfmi" className="btn btn-text" target="_blank">
+                        {/* <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526708/l8qk1apxnkvlgyf1lvx7.png" className="brand-name" width="30" /> */}
+                        Instagram
+                      </a>
                       <a type="button" href="https://twitter.com/@lekosfmi" className="btn btn-text" target="_blank">
                         {/* <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526708/l8qk1apxnkvlgyf1lvx7.png" className="brand-name" width="30" /> */}
                         Twitter
