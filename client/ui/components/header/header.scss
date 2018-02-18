@@ -4,6 +4,7 @@
     position: absolute;
     background: #000;
     z-index: 0;
+    height: 100%;
   }
 
   .container-fluid {
@@ -67,6 +68,7 @@
    margin-top: 20px;
    margin-bottom: 20px;
    letter-spacing: 2px;
+   font-weight: 300;
 
    a {
      transition: all ease 0.1s;
@@ -90,6 +92,10 @@
 
  .btn-text {
    font-size: 18px;
+
+   &:hover {
+    color: #e44389 !important;
+   }
 
    @media (max-width: 736px) {
      font-size: 12px;

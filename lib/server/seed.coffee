@@ -1,59 +1,60 @@
 # Feature Projects
 exports.seedFeatureProjects = [
   link: 'http://pixmi.me/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298411/ney7y9aubqo3fs1jltk1.jpg'
+  src: './feature-projects/pixmi.jpg'
   title: 'Pixmi'
   description: 'Photo sharing app'
 ,
   link: 'http://starry-night.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798187/bbwnub02pt1fuamycmdn.jpg'
+  src: './feature-projects/night-sky.jpg'
   title: 'Night Sky'
   description: 'Stars on a night sky using ThreeJS'
 ,
   link: 'http://pitch-volume.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798258/zamcusertmuj23jrewx6.jpg'
+  src: './feature-projects/pitch-sound.jpg'
   title: 'Pitch & Volume'
   description: 'Music mapping using ThreeJS and SoundCloud'
 ,
   link: 'http://lekosfmi-simple-blog.appspot.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506799593/m6nwtw6mcggoifvefk0y.jpg'
+  src: './feature-projects/medium-clone.jpg'
   title: 'Medium Clone'
   description: 'Blog developed using Jinja2 and Flask––all in python'
 ,
   link: 'https://github.com/iotile/ng-iotile-cloud'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506797953/jh5tjzdngvhksqiyiqo2.jpg'
+  src: './feature-projects/ng-iotile-cloud.jpg'
   title: 'Ng-IOTile-Cloud'
   description: 'Angular (v2.0+) IOTile Cloud Service'
 ,
   link: 'http://pokeplay.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798844/jjnj93fduzxxeynhrfon.jpg'
+  src: './feature-projects/poke-play.jpg'
   title: 'Poké Play'
   description: 'Display Pokémon on a beautiful background'
-,
-  link: 'http://erapok.org/'
-  src: 'http://livehdwallpaper.com/wp-content/uploads/2015/05/American-Flag-Wallpapers-American-Flag-Backgrounds.jpg'
-  title: 'ERAPOK'
-  description: 'Emergency Responders Assistance Program'
-,
+# ,
+#   link: 'http://erapok.org/'
+#   src: 'http://livehdwallpaper.com/wp-content/uploads/2015/05/American-Flag-Wallpapers-American-Flag-Backgrounds.jpg'
+#   title: 'ERAPOK'
+#   description: 'Emergency Responders Assistance Program'
+# ,
   link: 'http://coffee.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798734/w7d2p7zywnqflbku4mye.jpg'
+  src: './feature-projects/coffee-tracker.jpg'
   title: 'Coffee Tracker'
   description: 'Graph & Track Coffee Usages'
 ,
   link: 'https://github.com/lekosfmi/twitter_sentiment'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1506798913/xxxk0z7c7uxor0wkcm8r.jpg'
+  src: './feature-projects/twitter-sentiment.jpg'
   title: 'Tweet Sentiment'
   description: 'Sentiment analysis of Tweets using deep learning'
 ,
   link: 'http://chat.lekosfmi.com/'
-  src: 'https://res.cloudinary.com/pixmi/image/upload/v1469298410/yrgxuzdwmmwxuoxaado3.jpg'
+  src: './feature-projects/chat-app.jpg'
   title: 'Chat App'
   description: 'Small chat app inspired by Slack'
-#   link: 'http://prime-calculate.lekosfmi.com/'
-#   src: 'https://res.cloudinary.com/pixmi/image/upload/v1470099759/bbvkpew6dgdeop8rhzbf.png'
-#   title: 'Prime Calculate'
-#   description: 'Determine whether a number is prime or composite'
-# ,
+,
+  link: 'http://prime-calculate.lekosfmi.com/'
+  src: './feature-projects/prime-calc.png'
+  title: 'Prime Calculate'
+  description: 'Determine whether a number is prime or composite'
+
 #   link: 'https://lekosfmi-rasengan.herokuapp.com/'
 #   src: 'http://wallpapercave.com/wp/IWa0tao.jpg'
 #   title: 'Simple Animation'
@@ -95,24 +96,6 @@ exports.seedImages = [
 ,
   name: ''
   src: 'https://res.cloudinary.com/pixmi/image/upload/v1499550680/bihrvd9kv4wx8o2wbwjg.jpg'
-]
-
-#  Pokemon
-exports.seedPokemons = [
-  name: 'Charizard'
-  url: 'http://www.pokestadium.com/sprites/xy/charizard.gif'
-,
-  name: 'Rayquaza'
-  url: 'http://www.pokestadium.com/sprites/xy/rayquaza.gif'
-,
-  name: 'Pikachu'
-  url: 'http://www.pokestadium.com/sprites/xy/pikachu.gif'
-,
-  name: 'Ho-Oh'
-  url: 'http://www.pokestadium.com/sprites/xy/ho-oh.gif'
-,
-  name: 'Yveltal'
-  url: 'http://www.pokestadium.com/sprites/xy/yveltal.gif'
 ]
 
 # Skill Languages

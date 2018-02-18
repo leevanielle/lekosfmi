@@ -1,17 +1,32 @@
 {
   "name": "lekosfmi",
-  "private": true,
-  "scripts": {
-    "start": "meteor run"
+  "version": "1.0.0",
+  "description": "I'm a software engineer residing in the SF Bay Area, California.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekosfmi/lekosfmi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lekosfmi/lekosfmi/issues"
+  },
+  "homepage": "https://github.com/lekosfmi/lekosfmi#readme",
   "dependencies": {
-    "@sendgrid/mail": "^6.1.3",
+    "@babel/runtime": "^7.0.0-beta.40",
     "babel-runtime": "^6.26.0",
-    "bcrypt": "^0.8.7",
+    "bcrypt": "^1.0.3",
     "meteor-node-stubs": "~0.2.0",
-    "react": "^15.3.2",
+    "react": "^15.6.2",
     "react-addons-pure-render-mixin": "^15.3.1",
-    "react-dom": "^15.3.2",
+    "react-dom": "^15.6.2",
     "react-mounter": "^1.2.0",
     "react-particles-js": "^1.5.0",
     "waypoints": "^4.0.0"

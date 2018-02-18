@@ -6,7 +6,6 @@
 {
   FeatureProjects,
   Images,
-  Pokemons,
   SkillLanguages,
   SkillTechnology
 } = require '../../collections/collections.js'
@@ -15,7 +14,6 @@
 {
   seedFeatureProjects,
   seedImages,
-  seedPokemons,
   seedSkillLanguages,
   seedSkillTechnology
 } = require './seed.coffee'
@@ -38,9 +36,6 @@ Meteor.startup ->
 
   if Images.find().count() is 0
     Images.insert(s) for s in seedImages
-
-  if Pokemons.find().count() is 0
-    Pokemons.insert(s) for s in seedPokemons
 
   if SkillLanguages.find().count() is 0
     SkillLanguages.insert(s) for s in seedSkillLanguages
