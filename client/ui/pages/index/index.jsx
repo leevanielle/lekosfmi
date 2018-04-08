@@ -43,7 +43,7 @@ export default class IndexPage extends Component {
 
         <SkillProgress renderLanguages={this.renderLanguages()} renderTechnologies={this.renderTechnologies()} />
 
-        <div className="container">
+        {/* <div className="container">
 
         <div className="page-header">
           <h1>Example page header <small>Subtext for header</small>
@@ -63,7 +63,7 @@ export default class IndexPage extends Component {
 
         </div>
 
-        </div>
+        </div> */}
       </div>
     )
   }
