@@ -105,7 +105,7 @@ export default class Header extends Component {
               {this.renderParticles()}
               <div className="jumbotron">
                 <div className="container-fluid">
-                    <img id="logo" src="./header-image/profile-picture-bw.jpg" className="img-circle" alt="logo" />
+                    <img id="logo" src="./header-image/profile-picture.jpg" className="img-circle" alt="logo" />
                     <p className="subtitle">Vanielle Lee</p>
                     <p className="subtitle">
                       📍 <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076399,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">
