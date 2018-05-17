@@ -1,6 +1,7 @@
 // import main components
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 
 export default class PictureBlock extends Component {
@@ -24,10 +25,10 @@ export default class PictureBlock extends Component {
 }
 
 // declaring propTypes
-React.propTypes = {
-  size: React.PropTypes.string.isRequired,
-  link: React.PropTypes.string.isRequired,
-  src: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired
+PictureBlock.propTypes = {
+  size: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }

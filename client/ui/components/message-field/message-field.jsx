@@ -1,6 +1,7 @@
 // import main components / modules
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 
 export default class MessageField extends React.Component {
@@ -18,7 +19,7 @@ export default class MessageField extends React.Component {
 }
 
 // Declaring propTypes
-React.propTypes = {
+MessageField.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   onFocus: PropTypes.func

@@ -17,7 +17,7 @@ export default class IndexPage extends Component {
   renderProjects() {
     return this.props.projects.map((p) => {
      return  <PictureBlock key={p._id}
-                           size="col-md-6"
+                           size="col-sm-4"
                            link={p.link}
                            src={p.src}
                            title={p.title}

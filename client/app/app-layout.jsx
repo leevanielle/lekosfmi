@@ -1,5 +1,5 @@
 // import main components
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 // import custom components
