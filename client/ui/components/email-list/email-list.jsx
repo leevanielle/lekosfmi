@@ -28,7 +28,10 @@ export default class EmailList extends Component {
     return (
       <form id="email-list" onSubmit={this.handleSubmit.bind(this)}>
         <div className="page-header text-center">
-          <h3>Enter your email below and I'll send you a <i>free</i> resume template. <small>No spam. Ever.</small>
+          <h3>
+            Enter your email below and I'll send you a <i>free</i> resume template.
+            <br />
+            <small>No spam. Ever.</small>
           <div className="input-group">
             <input type="text"
                    name="email"
