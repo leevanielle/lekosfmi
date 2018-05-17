@@ -1,6 +1,7 @@
 // import main components / modules
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 
 export default class Progressbar extends Component {
@@ -20,8 +21,8 @@ export default class Progressbar extends Component {
 }
 
 
-React.propTypes = {
-  progressId: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
-  style: React.PropTypes.object.isRequired
+Progressbar.propTypes = {
+  progressId: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  style: PropTypes.object.isRequired
 }

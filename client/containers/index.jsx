@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor'
-import { createContainer } from 'meteor/react-meteor-data'
+import { withTracker } from 'meteor/react-meteor-data'
 
 // Import page
 import IndexPage from '../ui/pages/index/index.jsx'
@@ -12,16 +12,15 @@ import {
 } from '../../collections/collections'
 
 
-export default IndexContainer = createContainer(() => {
+export default IndexContainer = withTracker(prop => {
 
   Meteor.subscribe('featureProjects')
   Meteor.subscribe('skillLanguages')
   Meteor.subscribe('skillTechnology')
 
   return {
-      projects: FeatureProjects.find({}).fetch(),
-      languages: SkillLanguages.find({}).fetch(),
-      technologies: SkillTechnology.find({}).fetch()
+    projects: FeatureProjects.find({}).fetch(),
+    languages: SkillLanguages.find({}).fetch(),
+    technologies: SkillTechnology.find({}).fetch()
   }
-
-}, IndexPage)
+})(IndexPage)

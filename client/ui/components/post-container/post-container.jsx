@@ -1,6 +1,7 @@
 // import main modules / components
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 
 export default class PostContainer extends Component {
@@ -25,8 +26,8 @@ export default class PostContainer extends Component {
   }
 }
 
-React.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  content: React.PropTypes.string.isRequired,
-  date: React.PropTypes.string.isRequired
+PostContainer.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired
 }

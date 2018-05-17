@@ -1,6 +1,7 @@
 // import main components
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 // import custom components
 import PageHeader from '../page-header/page-header.jsx'
@@ -20,7 +21,7 @@ export default class FeaturedWork extends Component {
 }
 
 // declaring propTypes
-React.propTypes = {
+FeaturedWork.propTypes = {
   title: PropTypes.string.isRequired,
-  renderPictureBlock: React.PropTypes.func
+  renderPictureBlock: PropTypes.array
 }

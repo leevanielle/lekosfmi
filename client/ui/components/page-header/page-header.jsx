@@ -1,6 +1,8 @@
 // import main components
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
+
 
 // import custom components
 export default class PageHeader extends Component {
@@ -18,6 +20,6 @@ export default class PageHeader extends Component {
 }
 
 // Declaring propTypes
-React.propTypes = {
+PageHeader.propTypes = {
   title: PropTypes.string
 }

@@ -1,6 +1,7 @@
 // import main components / modules
-import React, { Component, PropTypes} from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 // import custom components
 import PageHeader from '../../components/page-header/page-header.jsx'
@@ -26,7 +27,7 @@ export default class SkillProgress extends Component {
 }
 
 
-React.propTypes = {
-  renderLanguages: React.PropTypes.func.isRequired,
-  renderTechnologies: React.PropTypes.func.isRequired
+SkillProgress.propTypes = {
+  renderLanguages: PropTypes.array.isRequired,
+  renderTechnologies: PropTypes.array.isRequired
 }

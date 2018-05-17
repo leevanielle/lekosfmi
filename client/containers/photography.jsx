@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor'
-import { createContainer } from 'meteor/react-meteor-data'
+import { withTracker } from 'meteor/react-meteor-data'
 
 // Import page
 import PhotographyPage from '../ui/pages/photography/photography.jsx'
@@ -8,7 +8,7 @@ import PhotographyPage from '../ui/pages/photography/photography.jsx'
 import { Images } from '../../collections/collections'
 
 
-export default PhotographyContainer = createContainer(() => {
+export default PhotographyContainer = withTracker(() => {
 
   Meteor.subscribe('images')
 

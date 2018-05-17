@@ -1,6 +1,7 @@
 // import main components / modules
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 
 
 export default class InputField extends Component {
@@ -22,7 +23,7 @@ export default class InputField extends Component {
 }
 
 // Declaring propTypes
-React.propTypes = {
+InputField.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,

@@ -1,6 +1,6 @@
 // import main components
 import { FlowRouter } from 'meteor/kadira:flow-router'
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Session } from 'meteor/session'
 
