@@ -1,6 +1,7 @@
 // import main components
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import { Meteor } from 'meteor/meteor'
 
 
 export default class EmailList extends Component {
@@ -18,7 +19,13 @@ export default class EmailList extends Component {
     let email = e.target.email.value
 
     if (email) {
-      console.log('email ', email);
+      Meteor.call('email-list.insert', email, (error, result) => {
+
+        console.log('Result', error)
+        console.log('Error', result)
+
+      })
+
     }
 
     e.target.email.value = ''
@@ -33,7 +40,7 @@ export default class EmailList extends Component {
             <br />
             <small>No spam. Ever.</small>
           <div className="input-group">
-            <input type="text"
+            <input type="email"
                    name="email"
                    className="form-control"
                    aria-label="..."
