@@ -23,7 +23,9 @@ Meteor.startup ->
 
   # Email smpt
   # process.env.MAIL_URL = 'smtps://lephankoby.meteor%40gmail.com:sehqpbztzzfvlyas@smtp.gmail.com:465/'
-  process.env.MAIL_URL = 'smtps://vanielle%40lekosfmi.com:Kobydanny8*@smtp.gmail.com:465/'
+  # process.env.MAIL_URL = 'smtps://vanielle%40lekosfmi.com:Kobydanny8*@smtp.gmail.com:465/'
+  process.env.MAIL_URL = 'smtps://apikey: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@smtp.sendgrid.net:465/'
+
 
   Accounts.emailTemplates.siteName = "Lekosfmi"
   Accounts.emailTemplates.from = "Vanielle Lee <email-signup@pixelizestudio.com>"
