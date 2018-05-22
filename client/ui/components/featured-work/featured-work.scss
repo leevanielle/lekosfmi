@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
 
-  @media(min-width: 900px) {
+  @media (min-width: 769px) {
     display: flex;
     margin: 0;
     padding: 0 90px;
@@ -20,7 +20,7 @@
     text-align: left;
     margin-bottom: 0;
 
-    @media(max-width: 1079px) {
+    @media (max-width: 1079px) {
       text-align: center;
     }
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   /* Main styling */
 
