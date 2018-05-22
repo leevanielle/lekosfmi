@@ -37,8 +37,8 @@ export default class EmailList extends Component {
         <div className="page-header text-center">
           <h3>
             Enter your email below and I'll send you a <i>free</i> resume template.
-            <br />
-            <small>No spam. Ever.</small>
+          </h3>
+          <small>No spam. Ever.</small>
           <div className="input-group">
             <input type="email"
                    name="email"
@@ -52,7 +52,7 @@ export default class EmailList extends Component {
               </button>
             </div>
           </div>
-          </h3>
+
         </div>
       </form>
     )

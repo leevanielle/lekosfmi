@@ -1,6 +1,7 @@
 /* Email List styling */
 
 #email-list {
+  overflow: hidden;
 
   .page-header {
     // border-top: 10px solid #000;
@@ -14,18 +15,71 @@
     background: white;
     // background: url('')
 
+    @media (max-width: 736px) {
+      padding: 0.5em 1.2em 1em 1.2em;
+    }
+
+    h3 {
+      line-height: 35px;
+      font-weight: 400;
+
+      @media (max-width: 736px) {
+        font-size: 14px;
+      }
+    }
+
+    small {
+      margin-top: 10px;
+    }
+
     .input-group {
       padding: 1em 8em 0 8em;
 
+      @media (max-width: 736px) {
+        padding: 0;
+        margin-top: 15px;
+      }
+
+      input {
+        text-align: center;
+
+        @media (max-width: 736px) {
+          font-size: 14px;
+        }
+
+        &::placeholder {
+          @media (max-width: 736px) {
+            font-size: 14px;
+          }
+        }
+
+        &:focus {
+          index-z: 1;
+        }
+      }
+
       .input-group-btn {
+
         button {
           border-radius: 50%;
           width: 40px;
           height: 40px;
+          left: 0px;
+          top: 2px;
+          index-z: 5;
+
+          @media (max-width: 736px) {
+            margin-right: 0px !important;
+          }
+
           margin: 0px 0px 0px 10px;
 
           span {
-            right: 2px
+            right: 2px;
+
+            @media (max-width: 736px) {
+              right: 0;
+            }
           }
         }
       }
