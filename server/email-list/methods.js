@@ -1,3 +1,10 @@
+/*
+# Email.send
+#   from: "My Website Name <noreply@mywebsite.com>"
+#   to: "vanielle@pixelizestudio.com"
+#   subject: "noreply@mywebsite.com | You have received a reply to your enquiry"
+#   html: "Here is <b>some</b> text!"
+ */
 import { Email } from 'meteor/email'
 import { check } from 'meteor/check'
 import { EmailList } from '../../collections/collections';
@@ -14,10 +21,10 @@ Meteor.methods({
     this.unblock()
 
     Email.send({
-      from: '<lephanvanielle@gmail.com>',
-      to: 'lephanvanielle@gmail.com',
-      subject: "Lekosfmi's Form",
-      text: `${lastName}, ${firstName} - [${email}]: ${message}`
+      from: "Lekosfmi's Personal Site <vanielle@pixelizestudio.com>",
+      to: 'vanielle@lekosfmi.com',
+      subject: "Lekosfmi | Someone Message You!",
+      html: `${lastName}, ${firstName} - [${email}]: ${message}`
     })
   },
 
@@ -25,7 +32,7 @@ Meteor.methods({
 
     check([email], [String])
 
-    if(!isValidEmail(email)) {
+    if (!isValidEmail(email)) {
       return Meteor.Error('That email was invalid. Please try again with a different email.')
     }
 
@@ -36,14 +43,13 @@ Meteor.methods({
 
     this.unblock()
 
+    Email.send({
+      from: "Lekosfmi's Personal Site <vanielle@lekosfmi.com>",
+      to: 'vanielle@lekosfmi.com',
+      subject: "Lekosfmi | New User Signup",
+      html: `User's email: <b>${email}</b>`
+    })
 
     return EmailList.insert({ email });
-
-    // Email.send({
-    //   from: '<lephanvanielle@gmail.com>',
-    //   to: 'lephanvanielle@gmail.com',
-    //   subject: "Lekosfmi's Form",
-    //   text: `${lastName}, ${firstName} - [${email}]: ${message}`
-    // })
   }
 })

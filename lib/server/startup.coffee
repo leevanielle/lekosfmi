@@ -22,7 +22,11 @@
 Meteor.startup ->
 
   # Email smpt
-  process.env.MAIL_URL = 'smtps://lephankoby.meteor%40gmail.com:sehqpbztzzfvlyas@smtp.gmail.com:465/'
+  # process.env.MAIL_URL = 'smtps://lephankoby.meteor%40gmail.com:sehqpbztzzfvlyas@smtp.gmail.com:465/'
+  process.env.MAIL_URL = 'smtps://vanielle%40lekosfmi.com:Kobydanny8*@smtp.gmail.com:465/'
+
+  Accounts.emailTemplates.siteName = "Lekosfmi"
+  Accounts.emailTemplates.from = "Vanielle Lee <email-signup@pixelizestudio.com>"
 
   # Reset collections
   FeatureProjects.remove({}) if FeatureProjects.find().count() > 0
