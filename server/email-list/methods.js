@@ -21,7 +21,7 @@ Meteor.methods({
     this.unblock()
 
     Email.send({
-      from: "Lekosfmi's Personal Site <vanielle@pixelizestudio.com>",
+      from: "Lekosfmi's Personal Site <vanielle@lekosfmi.com>",
       to: 'vanielle@lekosfmi.com',
       subject: "Lekosfmi | Someone Message You!",
       html: `${lastName}, ${firstName} - [${email}]: ${message}`
