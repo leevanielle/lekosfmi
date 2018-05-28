@@ -109,10 +109,10 @@ export default class Header extends Component {
                     <p className="subtitle">Vanielle Lee</p>
                     <p className="subtitle">
                       📍 <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076399,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">
-                        San Francisco, California
+                        Los Angeles, California
                       </a>
                     </p>
-                    <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p>
+                    {/* <p className="subtitle">👩🏻‍💻 Software Engineer @ <a href="http://archsys.io" target="_blank">Arch Systems</a></p> */}
                     <div className="btn-group" role="group" aria-label="...">
                       <a type="button" href="https://www.linkedin.com/in/lekosfmi/" className="btn btn-text" target="_blank">
                         {/* <img src="https://res.cloudinary.com/pixmi/image/upload/v1506526538/enz43dhmbdsvsvkgsav3.png" className="brand-name" width="30" /> */}
