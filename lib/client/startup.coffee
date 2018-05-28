@@ -3,8 +3,6 @@
 { Session } = require 'meteor/session'
 { Tracker } = require 'meteor/tracker'
 
-AWS = require 'aws-sdk'
-
 Meteor.startup ->
 
   # console.log Meteor.settings.public.aws
