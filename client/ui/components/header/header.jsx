@@ -110,7 +110,7 @@ export default class Header extends Component {
                     <img id="logo" src="./header-image/profile-picture.jpg" className="img-circle" alt="logo" />
                     <p className="subtitle">Vanielle Lee</p>
                     <p className="subtitle">
-                      📍 <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076399,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">
+                      📍 <a href="https://www.google.com/maps/place/Los+Angeles,+CA/@34.0207305,-118.6919239,10z/data=!3m1!4b1!4m5!3m4!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!8m2!3d34.0522342!4d-118.2436849" target="_blank">
                         Los Angeles, California
                       </a>
                     </p>
