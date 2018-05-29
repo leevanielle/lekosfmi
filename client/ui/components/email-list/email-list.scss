@@ -3,6 +3,12 @@
 #email-list {
   overflow: hidden;
   background: transparent;
+  margin: 15px;
+  margin-bottom: 0;
+
+  @media (max-width: 736px) {
+    margin: 0;
+  }
 
   .page-header {
     padding: 15px;
@@ -11,7 +17,12 @@
     z-index: 10;
     position: relative;
     background: #fff;
-    // background: url('')
+    opacity: 0.9;
+    border-radius: 20px;
+
+    @media (max-width: 736px) {
+      border-radius: 0;
+    }
 
     h3 {
       margin-top: 0;

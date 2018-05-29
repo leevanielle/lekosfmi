@@ -5,7 +5,6 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 // Import custom components
-import EmailList from '../../components/email-list/email-list.jsx'
 import FeaturedWork from '../../components/featured-work/featured-work.jsx'
 import PageHeader from '../../components/page-header/page-header.jsx'
 import PictureBlock from '../../components/picture-block/picture-block.jsx'
@@ -40,7 +39,6 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        {/* <EmailList /> */}
         <FeaturedWork title="Passion Projects" renderPictureBlock={this.renderProjects()} />
         <SkillProgress renderLanguages={this.renderLanguages()} renderTechnologies={this.renderTechnologies()} />
       </div>

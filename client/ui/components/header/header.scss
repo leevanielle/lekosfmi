@@ -1,10 +1,10 @@
 /* Header styling */
 #header {
   canvas {
-    position: absolute;
-    background: #000;
-    z-index: 0;
+    background: transparent;
+    z-index: 1;
     height: 100%;
+    position: fixed;
   }
 
   .container-fluid {
@@ -43,14 +43,24 @@
     }
   }
 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../astronomy.jpg") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   .jumbotron {
     background: transparent;
     position: relative;
     padding: 65px 20px 20px 20px;
     border-radius: 0;
+    z-index: 1;
+    margin-bottom: 0;
 
     @media (max-width: 400px) {
-      padding-bottom: 10px;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -77,6 +87,7 @@
      color: #fff;
      outline: none;
      margin: 0;
+     font-size: 20px;
 
      &:hover {
        color: #e44389;

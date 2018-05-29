@@ -6,6 +6,8 @@ import { Session } from 'meteor/session'
 
 import Particles from 'react-particles-js'
 
+import EmailList from '../email-list/email-list.jsx'
+
 
 export default class Header extends Component {
     constructor(props) {
@@ -14,16 +16,16 @@ export default class Header extends Component {
         particlesParam: {
         "particles": {
           "number": {
-            "value": 100
+            "value": 20
           },
           "color": {
-            "value": "#e44389"
+            "value": "#FFF17A"
           },
           "shape": {
             "type": "star",
             "stroke": {
-              "width": 5,
-              "color": "#e44389"
+              "width": 8,
+              "color": "#FFF17A"
             }
           },
           "opacity": {
@@ -49,7 +51,7 @@ export default class Header extends Component {
           "line_linked": {
             "enable": false,
             "distance": 10,
-            "color": "#e44389",
+            "color": "#FFF17A",
             "opacity": 1,
             "width": 5
           },
@@ -131,6 +133,8 @@ export default class Header extends Component {
                         Twitter
                       </a>
                     </div>
+
+                    <EmailList />
 
                   {/* {this.renderAbout()} */}
                 </div>
