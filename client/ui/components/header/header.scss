@@ -85,21 +85,20 @@
    }
 
    @media (max-width: 736px) {
-     font-size: 14px;
      margin-top: 10px;
      margin-bottom: 10px;
    }
  }
 
  .btn-text {
-   font-size: 18px;
+   font-size: 25px;
 
    &:hover {
     color: #e44389 !important;
    }
 
    @media (max-width: 736px) {
-     font-size: 12px;
+     font-size: 18px;
     }
   }
 

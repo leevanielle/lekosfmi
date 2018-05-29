@@ -33,29 +33,26 @@ export default class EmailList extends Component {
 
   render() {
     return (
-
       <form id="email-list" onSubmit={this.handleSubmit.bind(this)}>
-        <div className="container">
-          <div className="page-header text-center">
-            <h3>
-              Enter your email below and I'll send you a <i>free</i> resume template.
-            </h3>
-            <small>No spam. Ever.</small>
-            <div className="input-group">
-              <input type="email"
-                     name="email"
-                     className="form-control"
-                     aria-label="..."
-                     placeholder="Enter email here..."/>
-              <div className="input-group-btn">
-                <button className="btn btn-default"
-                        type="submit">
-                  <span className="glyphicon glyphicon-send"></span>
-                </button>
-              </div>
+
+        <div className="page-header text-center">
+          <h3>
+            Enter your email below and I'll send you a <i>free</i> resume template.
+          </h3>
+          <small>No spam. Ever.</small>
+          <div className="input-group">
+            <input type="email"
+                   name="email"
+                   className="form-control"
+                   aria-label="..."
+                   placeholder="Enter email here..."/>
+            <div className="input-group-btn">
+              <button className="btn btn-default"
+                      type="submit">
+                <span className="glyphicon glyphicon-send"></span>
+              </button>
             </div>
           </div>
-
         </div>
       </form>
     )

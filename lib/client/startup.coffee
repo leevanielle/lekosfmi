@@ -4,6 +4,7 @@
 { Tracker } = require 'meteor/tracker'
 
 Meteor.startup ->
+  console.log "Welcome, to my personal portfolio."
 
   # console.log Meteor.settings.public.aws
   #
